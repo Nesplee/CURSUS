@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 21:00:48 by dinguyen          #+#    #+#              #
-#    Updated: 2024/10/14 00:30:32 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/10/14 00:48:15 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRCS =	ft_bzero.c ft_calloc.c	ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
 	ft_toupper.c ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	ft_isdigit.c ft_isprint.c ft_striteri.c ft_isalnum.c ft_isalpha.c \
 	ft_isascii.c ft_isdigit.c ft_isprint.c ft_putchar.c ft_putstr.c \
-	ft_putnbr.c ft_puthex.c ft_putptr.c
+	ft_putnbr.c ft_puthex.c ft_putptr.c ft_putunbr.c
+
 
 BONUS_SRCS = ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
 	ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c \

@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 00:16:33 by dinguyen          #+#    #+#              #
-#    Updated: 2024/10/14 00:27:16 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/10/14 00:39:14 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,17 +24,22 @@ LIBFT_H = $(LIBFT_DIR)libft.h
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(LIBFT)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBFT)
+
+$(LIBFT):
+	make -C $(LIBFT_DIR)
 
 %.o: %.c $(LIBFT_H)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
+	make -C $(LIBFT_DIR) clean
 
 fclean: clean
 	rm -f $(NAME)
+	make -C $(LIBFT_DIR) fclean
 
 re: fclean all
 
