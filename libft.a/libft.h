@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:00:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/05 22:03:17 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/10/14 00:30:34 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ typedef struct s_list
 	struct s_list	*next;
 }			t_list;
 
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
+int		ft_putnbr(int n);
+int		ft_putptr(void *ptr);
+int		ft_puthex(unsigned long num, int uppercase);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
