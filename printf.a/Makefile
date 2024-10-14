@@ -6,26 +6,27 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 00:16:33 by dinguyen          #+#    #+#              #
-#    Updated: 2024/10/14 17:55:59 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/10/14 22:04:19 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c main.c
-OBJS = $(SRCS:.c=.o)
+SRCS =	ft_printf.c
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+OBJS = $(SRCS:.c=.o)
 
 LIBFT_DIR = ../libft/
 LIBFT = $(LIBFT_DIR)libft.a
 LIBFT_H = $(LIBFT_DIR)libft.h
 
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-		ar rcs $@ $(OBJS)
+		ar rcs $(NAME) $(OBJS) $(LIBFT)
 
 $(LIBFT):
 	make -C $(LIBFT_DIR)
