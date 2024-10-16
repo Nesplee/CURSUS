@@ -6,11 +6,11 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 00:54:14 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:07:29 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:25:13 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+#include "ft_printf.h"
 
 static void	format_return(const char specifier, va_list args, int *count)
 {

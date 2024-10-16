@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:00:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 00:48:27 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/10/15 00:37:16 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -23,12 +24,6 @@ typedef struct s_list
 	struct s_list	*next;
 }			t_list;
 
-int		ft_putchar(char c);
-int		ft_putstr(char *str);
-int		ft_putnbr(int n);
-int		ft_putptr(void *ptr);
-int		ft_putunbr(unsigned int n);
-int		ft_puthex(unsigned long num, int uppercase);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
@@ -63,6 +58,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	**ft_split(const char *s, char c);
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
+int		ft_putnbr(int n);
+int		ft_putptr(void *ptr);
+int		ft_putunbr(unsigned int n);
+int		ft_puthex(unsigned long num, int uppercase);
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **alst, t_list *new);

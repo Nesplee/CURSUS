@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:35:08 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:26:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/15 02:09:50 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/15 02:13:37 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 int	ft_putptr(void *ptr)
 {

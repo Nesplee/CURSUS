@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:35:08 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:26:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/15 01:51:37 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/15 01:55:01 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_putnbr(int n)
 {
-	unsigned long	address;
-	int				count;
+	int	count;
+	int	r;
 
 	count = 0;
-	address = (unsigned long)ptr;
-	count = count + ft_putstr("0x");
-	if (address == 0)
-		count = count + ft_putchar('0');
-	else
-		count = count + ft_puthex(address, 0);
+	if (n == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return (11);
+	}
+	if (n < 0)
+	{
+		n = -n;
+		ft_putchar('-');
+		count++;
+	}
+	if (n > 9)
+		count = count + ft_putnbr(n / 10);
+	r = (n % 10) + '0';
+	ft_putchar(r);
+	count++;
 	return (count);
 }

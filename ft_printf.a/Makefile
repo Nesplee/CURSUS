@@ -5,42 +5,34 @@
 #                                                     +:+ +:+         +:+      #
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/14 00:16:33 by dinguyen          #+#    #+#              #
-#    Updated: 2024/10/14 22:04:19 by dinguyen         ###   ########.fr        #
+#    Created: 2024/10/15 14:20:20 by dinguyen          #+#    #+#              #
+#    Updated: 2024/10/15 14:37:53 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS =	ft_printf.c
+SRC = 	ft_putchar.c ft_puthex.c ft_putnbr.c ft_putptr.c ft_putstr.c \
+		ft_putunbr.c ft_printf.c
 
-OBJS = $(SRCS:.c=.o)
-
-LIBFT_DIR = ../libft/
-LIBFT = $(LIBFT_DIR)libft.a
-LIBFT_H = $(LIBFT_DIR)libft.h
+OBJ = $(SRC:.c=.o)
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(LIBFT)
-		ar rcs $(NAME) $(OBJS) $(LIBFT)
+$(NAME): $(OBJ)
+	ar rcs $@ $^
 
-$(LIBFT):
-	make -C $(LIBFT_DIR)
-
-%.o: %.c $(LIBFT_H)
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
-	make -C $(LIBFT_DIR) clean
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
-	make -C $(LIBFT_DIR) fclean
 
 re: fclean all
 

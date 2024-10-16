@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:35:08 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:26:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/15 01:48:23 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/15 01:51:15 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_putstr(char *str)
 {
-	unsigned long	address;
-	int				count;
+	int	count;
+	int	i;
 
+	if (str == NULL)
+		str = "(NULL)";
+	i = 0;
 	count = 0;
-	address = (unsigned long)ptr;
-	count = count + ft_putstr("0x");
-	if (address == 0)
-		count = count + ft_putchar('0');
-	else
-		count = count + ft_puthex(address, 0);
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+		count++;
+	}
 	return (count);
 }

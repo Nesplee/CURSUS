@@ -1,28 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:35:08 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:26:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/15 02:01:10 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/15 02:09:23 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_puthex(unsigned long num, int uppercase)
 {
-	unsigned long	address;
-	int				count;
+	char	hex[16];
+	char	*base;
+	int		count;
+	int		i;
 
+	i = 0;
 	count = 0;
-	address = (unsigned long)ptr;
-	count = count + ft_putstr("0x");
-	if (address == 0)
-		count = count + ft_putchar('0');
+	if (uppercase == 1)
+		base = "0123456789ABCDEF";
 	else
-		count = count + ft_puthex(address, 0);
+		base = "0123456789abcdef";
+	if (num == 0)
+		return (ft_putchar('0'));
+	while (num > 0)
+	{
+		hex[i] = base[num % 16];
+		num = num / 16;
+		i++;
+	}
+	while (i > 0)
+	{
+		i--;
+		count = count + ft_putchar(hex[i]);
+	}
 	return (count);
 }

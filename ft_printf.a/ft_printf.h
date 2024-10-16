@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:35:08 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/14 22:26:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/15 01:28:18 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/15 14:38:32 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int	ft_putptr(void *ptr)
-{
-	unsigned long	address;
-	int				count;
+# include <unistd.h>
+# include <stdarg.h>
 
-	count = 0;
-	address = (unsigned long)ptr;
-	count = count + ft_putstr("0x");
-	if (address == 0)
-		count = count + ft_putchar('0');
-	else
-		count = count + ft_puthex(address, 0);
-	return (count);
-}
+int	ft_putchar(char c);
+int	ft_puthex(unsigned long num, int uppercase);
+int	ft_putnbr(int n);
+int	ft_putptr(void *ptr);
+int	ft_putstr(char *str);
+int	ft_putunbr(unsigned int n);
+int	ft_printf(const char *format, ...);
+
+#endif
