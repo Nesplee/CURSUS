@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 00:05:31 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/25 10:19:02 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/25 15:14:10 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/25 15:36:49 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	found_newline(const char *str)
 {

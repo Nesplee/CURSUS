@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:57:19 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/25 10:19:00 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/25 15:14:06 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/10/25 15:36:51 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 static char	*allocate_line(char *buffer, int len)
 {
@@ -82,29 +82,26 @@ int	read_to_buffer(int fd, char **buffer)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer;
+	static char	*buffer[MAX_FD];
 	int			newline_pos;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
+	if (fd < 0 || fd >= MAX_FD || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
 	{
-		if (buffer)
+		if (buffer[fd])
 		{
-			free(buffer);
-			buffer = NULL;
+			free(buffer[fd]);
+			buffer[fd] = NULL;
 		}
 		return (NULL);
 	}
-	if (buffer == NULL)
-		buffer = ft_strdup("");
-	newline_pos = found_newline(buffer);
-	while (newline_pos == -1 && read_to_buffer(fd, &buffer))
-		newline_pos = found_newline(buffer);
-	if (newline_pos >= 0 || (buffer && *buffer))
-		return (extract_line(&buffer, newline_pos));
-	if (buffer)
-	{
-		free(buffer);
-		buffer = NULL;
-	}
+	if (buffer[fd] == NULL)
+		buffer[fd] = ft_strdup("");
+	newline_pos = found_newline(buffer[fd]);
+	while (newline_pos == -1 && read_to_buffer(fd, &buffer[fd]))
+		newline_pos = found_newline(buffer[fd]);
+	if (newline_pos >= 0 || (buffer[fd] && *buffer[fd]))
+		return (extract_line(&buffer[fd], newline_pos));
+	free(buffer[fd]);
+	buffer[fd] = NULL;
 	return (NULL);
 }
