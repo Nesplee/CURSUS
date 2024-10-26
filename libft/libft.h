@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:00:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/15 00:37:16 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:23:57 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ int		ft_putnbr(int n);
 int		ft_putptr(void *ptr);
 int		ft_putunbr(unsigned int n);
 int		ft_puthex(unsigned long num, int uppercase);
+int		ft_printf(const char *format, ...);
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **alst, t_list *new);
