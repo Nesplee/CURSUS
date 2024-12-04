@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/29 14:43:00 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/04 00:45:36 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/02 17:42:56 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/29 11:03:27 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strdup(char *s1)
 {
-	char	*result;
 	int		i;
-	int		j;
 	int		s1_len;
-	int		s2_len;
+	char	*duplicate;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 		return (NULL);
 	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	result = (char *)malloc((s1_len + s2_len + 1) * sizeof(char));
-	if (result == NULL)
+	duplicate = (char *)malloc(sizeof(char) * (s1_len + 1));
+	if (duplicate == NULL)
 		return (NULL);
-	i = -1;
-	while (++i < s1_len)
-		result[i] = s1[i];
-	j = -1;
-	while (++j < s2_len)
-		result[i + j] = s2[j];
-	result[i + j] = '\0';
-	return (result);
+	i = 0;
+	while (s1[i])
+	{
+		duplicate[i] = s1[i];
+		i++;
+	}
+	duplicate[i] = '\0';
+	return (duplicate);
 }

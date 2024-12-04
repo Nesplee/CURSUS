@@ -1,38 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 20:45:22 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/13 20:46:05 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/04 00:21:33 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/29 11:18:48 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr(int n)
+int	ft_atoi(const char *str)
 {
-	int		count;
-	char	r;
+	int	i;
+	int	sign;
+	int	result;
 
-	count = 0;
-	if (n == -2147483648)
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
+		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		ft_putstr("-2147483648");
-		return (11);
+		if (str[i] == '-')
+			sign = -1;
+		i++;
 	}
-	if (n < 0)
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		n = -n;
-		ft_putchar('-');
-		count++;
+		result = result * 10 + str[i] - '0';
+		i++;
 	}
-	if (n > 9)
-		count = count + ft_putnbr(n / 10);
-	r = (n % 10) + '0';
-	ft_putchar(r);
-	count++;
-	return (count);
+	return (result * sign);
 }

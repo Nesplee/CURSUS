@@ -6,13 +6,13 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 19:22:00 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/05 20:45:19 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:58:31 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(char const *s, char c)
+int	count_words(char const *s, char c)
 {
 	int	count;
 	int	i;

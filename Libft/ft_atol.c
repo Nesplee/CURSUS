@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 20:44:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/10/13 20:45:04 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/27 13:43:11 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/28 18:12:05 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putstr(char *str)
+long	ft_atol(const char *str)
 {
-	int	i;
-	int	count;
+	long	result;
+	int		sign;
+	int		i;
 
-	if (str == NULL)
-		str = "(NULL)";
 	i = 0;
-	count = 0;
-	while (str[i])
-	{
-		ft_putchar(str[i]);
+	result = 0;
+	sign = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-		count++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign = -sign;
+		i++;
 	}
-	return (count);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		result = result * 10 + (str[i] - '0');
+		i++;
+	}
+	return (result * sign);
 }
