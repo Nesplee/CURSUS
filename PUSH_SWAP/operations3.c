@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 12:06:23 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 09:58:44 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/30 10:52:51 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/12/01 15:22:40 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	rr(t_stack *a, t_stack *b)
 	if (a == NULL || a->top == NULL || a->top->next == NULL
 		|| b == NULL || b->top == NULL || b->top->next == NULL)
 		return ;
-	rotate_top_to_bottom(a);
-	rotate_top_to_bottom(b);
+	ra(a);
+	rb(b);
 	ft_printf("rr\n");
 }
 
@@ -37,7 +37,7 @@ void	rrr(t_stack *a, t_stack *b)
 	if (a == NULL || a->top == NULL || a->top->next == NULL
 		|| b == NULL || b->top == NULL || b->top->next == NULL)
 		return ;
-	rotate_bottom_to_top(a);
-	rotate_bottom_to_top(b);
+	rra(a);
+	rrb(b);
 	ft_printf("rrr\n");
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_stacks1.c                                    :+:      :+:    :+:   */
+/*   Utils_stacks1.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 15:28:26 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 19:06:59 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/30 10:54:49 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/30 12:10:10 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,25 +34,6 @@ t_stack	*init_stack(void)
 	stack->top = NULL;
 	stack->size = 0;
 	return (stack);
-}
-
-void	print_stack(t_stack *stack)
-{
-	t_node	*current;
-
-	if (stack == NULL || stack->top == NULL)
-	{
-		ft_printf("La pile est vide.\n");
-		return ;
-	}
-	current = stack->top;
-	ft_printf("Pile:");
-	while (current != NULL)
-	{
-		ft_printf("%d ", current->value);
-		current = current->next;
-	}
-	ft_printf("\n");
 }
 
 void	free_stack(t_stack *stack)
@@ -87,4 +68,10 @@ int	stack_size(t_stack *stack)
 		node = node->next;
 	}
 	return (i);
+}
+
+void	print_error_and_exit(char *message)
+{
+	ft_printf("Error: %s\n", message);
+	exit(EXIT_FAILURE);
 }

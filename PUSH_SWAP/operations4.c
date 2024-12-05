@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_operations1.c                                :+:      :+:    :+:   */
+/*   operations4.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 15:23:15 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/28 20:18:31 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/30 10:55:36 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/30 14:57:13 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	push(t_stack *stack, int value)
+int	push(t_stack *stack, int value)
 {
 	t_node	*node;
 
 	node = create_node(value);
 	if (node == NULL)
-		return ;
+		return (0);
 	node->next = stack->top;
 	stack->top = node;
 	stack->size++;
+	return (1);
 }
 
 int	pop(t_stack *stack)
@@ -39,27 +40,28 @@ int	pop(t_stack *stack)
 	return (value);
 }
 
-void	swap_top(t_stack *stack)
+int	swap_top(t_stack *stack)
 {
 	t_node	*first;
 	t_node	*second;
 
 	if (stack == NULL || stack->top == NULL)
-		return ;
+		return (0);
 	first = stack->top;
 	second = first->next;
 	first->next = second->next;
 	second->next = first;
 	stack->top = second;
+	return (1);
 }
 
-void	rotate_top_to_bottom(t_stack *stack)
+int	rotate_top_to_bottom(t_stack *stack)
 {
 	t_node	*first;
 	t_node	*current;
 
 	if (stack == NULL || stack->top == NULL || stack->top->next == NULL)
-		return ;
+		return (0);
 	first = stack->top;
 	stack->top = first->next;
 	current = stack->top;
@@ -67,15 +69,16 @@ void	rotate_top_to_bottom(t_stack *stack)
 		current = current->next;
 	current->next = first;
 	first->next = NULL;
+	return (1);
 }
 
-void	rotate_bottom_to_top(t_stack *stack)
+int	rotate_bottom_to_top(t_stack *stack)
 {
 	t_node	*last;
 	t_node	*current;
 
 	if (stack == NULL || stack->top == NULL || stack->top->next == NULL)
-		return ;
+		return (0);
 	last = NULL;
 	current = stack->top;
 	while (current->next != NULL)
@@ -87,4 +90,5 @@ void	rotate_bottom_to_top(t_stack *stack)
 		last->next = NULL;
 	current->next = stack->top;
 	stack->top = current;
+	return (1);
 }

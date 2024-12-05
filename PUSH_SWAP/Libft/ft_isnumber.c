@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isnumber.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 10:09:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 19:07:05 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/27 14:29:15 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/30 13:46:30 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "libft.h"
 
-int	main(int ac, char **av)
+int	ft_isnumber(const char *str)
 {
-	t_stack	*a;
-	t_stack	*b;
+	int	i;
 
-	if (ac < 2)
+	if (!str || !*str)
 		return (0);
-	a = initialize_stack_a(ac - 1, av + 1);
-	if (!a)
-		print_error_and_exit("Initialization failed");
-	b = init_stack();
-	if (!b)
+	i = 0;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i])
 	{
-		free_stack(a);
-		print_error_and_exit("Stack allocation failed");
+		if (!ft_isdigit(str[i]))
+			return (0);
+		i++;
 	}
-	sort_stack(a, b);
-	free_stack(a);
-	free_stack(b);
-	return (0);
+	return (1);
 }

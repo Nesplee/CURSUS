@@ -1,16 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sorting1.c                                         :+:      :+:    :+:   */
+/*   sort1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 10:00:58 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 19:07:29 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/30 12:33:50 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/12/05 11:14:26 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	sort_stack(t_stack *a, t_stack *b)
+{
+	int	size;
+
+	if (!a || !b || is_sorted(a))
+		return ;
+	size = stack_size(a);
+	if (size <= 3)
+		sort_three(a);
+	else if (size <= 5)
+		sort_small(a, b);
+	else
+		radix_sort(a, b);
+}
 
 void	sort_three(t_stack *a)
 {
@@ -41,68 +56,52 @@ void	sort_three(t_stack *a)
 		rra(a);
 }
 
-void	sort_stack(t_stack *a, t_stack *b)
+t_stack	*initialize_stack_a(int ac, char **av)
 {
-	if (is_sorted(a))
-		return ;
-	if (stack_size(a) <= 3)
-		sort_three(a);
-	else if (stack_size(a) <= 5)
-		sort_five(a, b);
-	else
-		print_error_and_exit("too long\n");
-}
+	t_stack	*stack_a;
+	int		*values;
+	int		size;
+	int		i;
 
-int	find_min_index(t_stack *stack)
-{
-	int		index;
-	int		min_index;
-	int		min_value;
-	t_node	*current;
-
-	index = 0;
-	min_index = 0;
-	min_value = stack->top->value;
-	current = stack->top;
-	while (current)
+	values = validate_and_convert(ac, av, &size);
+	if (!values)
+		return (NULL);
+	stack_a = init_stack();
+	if (!stack_a)
+		print_error_and_exit("Erreur d'allocation pour la pile");
+	i = size - 1;
+	while (i >= 0)
 	{
-		if (current->value < min_value)
-		{
-			min_value = current->value;
-			min_index = index;
-		}
-		index++;
-		current = current->next;
+		push(stack_a, values[i]);
+		i--;
 	}
-	return (min_index);
+	free(values);
+	return (stack_a);
 }
 
-void	push_min_to_b(t_stack *a, t_stack *b)
+void	sort_small(t_stack *a, t_stack *b)
 {
+	int	size;
 	int	min_index;
 
-	min_index = find_min_index(a);
-	if (min_index <= a->size / 2)
+	size = stack_size(a);
+	if (size <= 3)
+		sort_three(a);
+	else if (size <= 5)
 	{
-		while (min_index--)
-			ra(a);
+		while (size > 3)
+		{
+			min_index = find_min_index(a);
+			if (min_index == 0)
+				pb(a, b);
+			else if (min_index <= size / 2)
+				ra(a);
+			else
+				rra(a);
+			size = stack_size(a);
+		}
+		sort_three(a);
+		while (!is_empty(b))
+			pa(a, b);
 	}
-	else
-	{
-		min_index = a->size - min_index;
-		while (min_index--)
-			rra(a);
-	}
-	pb(a, b);
-}
-
-void	sort_five(t_stack *a, t_stack *b)
-{
-	if (stack_size(a) != 5)
-		return ;
-	push_min_to_b(a, b);
-	push_min_to_b(a, b);
-	sort_three(a);
-	pa(a, b);
-	pa(a, b);
 }

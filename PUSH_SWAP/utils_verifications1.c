@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_arguments1.c                                 :+:      :+:    :+:   */
+/*   utils_verifications1.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 18:36:10 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 11:45:33 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/11/30 12:12:06 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/11/30 14:33:56 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void	print_error_and_exit(char *message)
-{
-	ft_printf("Error: %s\n", message);
-	exit(EXIT_FAILURE);
-}
 
 long	safe_atoi(const char *str)
 {
@@ -48,12 +42,18 @@ long	safe_atoi(const char *str)
 int	has_duplicates(int *arr, int size)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (i < size - 1)
+	while (i < size)
 	{
-		if (arr[i] == arr[i + 1])
-			print_error_and_exit("Doublons détectés");
+		j = i + 1;
+		while (j < size)
+		{
+			if (arr[i] == arr[j])
+				print_error_and_exit("Doublons détectés");
+			j++;
+		}
 		i++;
 	}
 	return (0);
@@ -64,7 +64,7 @@ int	count_words_in_args(int ac, char **av)
 	int	count;
 	int	i;
 
-	i = 0;
+	i = 1;
 	count = 0;
 	while (i < ac)
 	{
@@ -74,21 +74,32 @@ int	count_words_in_args(int ac, char **av)
 	return (count);
 }
 
-int	add_words_to_array(char *arg, int *arr, int index)
+static char	*concat_with_space(char *s1, char *s2)
 {
-	char	**split;
-	int		j;
+	char	*temp;
 
-	split = ft_split(arg, ' ');
-	if (!split)
-		print_error_and_exit("le Split n'a pas fonctionné\n");
-	j = 0;
-	while (split[j])
+	temp = ft_strjoin(s1, s2);
+	free(s1);
+	if (!temp)
+		print_error_and_exit("Erreur d'allocation");
+	return (temp);
+}
+
+char	*join_arguments(int ac, char **av)
+{
+	char	*joined;
+	int		i;
+
+	joined = ft_strdup("");
+	if (!joined)
+		print_error_and_exit("Erreur d'allocation");
+	i = 1;
+	while (i < ac)
 	{
-		arr[index++] = (int)safe_atoi(split[j]);
-		free(split[j]);
-		j++;
+		joined = concat_with_space(joined, av[i]);
+		if (i < ac - 1)
+			joined = concat_with_space(joined, " ");
+		i++;
 	}
-	free(split);
-	return (index);
+	return (joined);
 }
