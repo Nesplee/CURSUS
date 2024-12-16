@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 14:41:49 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/16 15:12:52 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/16 16:10:08 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,10 +87,10 @@ char	*find_command_path(char *cmd, char **envp)
 
 void	execute_command(t_pipex *pipex, char *cmd, char **envp)
 {
-	(void)pipex;
 	char	**args;
 	char	*cmd_path;
 
+	(void)pipex;
 	args = ft_split(cmd, ' ');
 	if (!args)
 	{

@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 13:17:14 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/16 15:30:00 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/16 16:09:36 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "Libft/libft.h"
 # include <stdio.h>
-c
+
 typedef struct s_pipex
 {
 	int		pipefd[2];
