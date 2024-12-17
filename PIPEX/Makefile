@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/16 14:57:41 by dinguyen          #+#    #+#              #
-#    Updated: 2024/12/17 12:51:03 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/12/17 14:05:04 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-# Variables
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 SRC			= main.c parsing.c processes.c process_utils.c commands.c \
@@ -32,7 +31,6 @@ LIBFT_DIR	= Libft
 LIBFT		= $(LIBFT_DIR)/libft.a
 NAME		= pipex
 
-# Règles
 all: $(NAME)
 
 $(NAME): $(OBJ) $(LIBFT)

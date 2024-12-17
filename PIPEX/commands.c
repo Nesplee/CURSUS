@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 14:41:49 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/17 12:58:37 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/17 14:04:47 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ static char	*get_path_variable(char **envp)
 	return (envp[i] + 5);
 }
 
-// Enlever le mot-clé 'static' de cette fonction
 char	*construct_cmd_path(char *path, char *cmd)
 {
 	char	*temp;
