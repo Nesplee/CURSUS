@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 13:33:47 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/16 15:08:24 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/17 13:00:27 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,10 @@ int	open_files(t_pipex *pipex, char **av)
 {
 	pipex->infile = open(av[1], O_RDONLY);
 	if (pipex->infile < 0)
-	{
-		ft_putstr_fd("Error: cannot open infile\n", 2);
-		return (-1);
-	}
+		perror(av[1]);
 	pipex->outfile = open(av[4], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (pipex->outfile < 0)
-	{
-		ft_putstr_fd("Error: cannot open outfile\n", 2);
-		close(pipex->infile);
-		return (-1);
-	}
+		perror(av[4]);
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/16 14:57:41 by dinguyen          #+#    #+#              #
-#    Updated: 2024/12/16 15:06:08 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/12/17 12:51:03 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@
 # Variables
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
-SRC			= main.c parsing.c processes.c commands.c utils.c
+SRC			= main.c parsing.c processes.c process_utils.c commands.c \
+			command_utils.c utils.c
 OBJ			= $(SRC:.c=.o)
 LIBFT_DIR	= Libft
 LIBFT		= $(LIBFT_DIR)/libft.a

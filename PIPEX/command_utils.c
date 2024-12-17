@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   command_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/16 15:02:57 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/17 13:02:03 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/12/17 12:51:38 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/12/17 13:01:19 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	main(int ac, char **av, char **envp)
+char	*try_paths(char **paths, char *cmd)
 {
-	t_pipex	*pipex;
-	int		exit_status;
+	int		i;
+	char	*cmd_path;
 
-	if (check_ac(ac) == -1)
+	if (!paths)
+		return (NULL);
+	i = 0;
+	while (paths[i])
 	{
-		ft_putstr_fd("Usage: ./pipex infile \"cmd1\" \"cmd2\" outfile\n", 2);
-		return (EXIT_FAILURE);
+		cmd_path = construct_cmd_path(paths[i], cmd);
+		if (!cmd_path)
+		{
+			free_double_ptr(paths);
+			return (NULL);
+		}
+		if (access(cmd_path, X_OK) == 0)
+		{
+			free_double_ptr(paths);
+			return (cmd_path);
+		}
+		free(cmd_path);
+		i++;
 	}
-	pipex = init_pipex(ac, av);
-	exit_status = fork_processes(pipex, av, envp);
-	free_resources(pipex);
-	return (exit_status);
+	free_double_ptr(paths);
+	return (NULL);
 }
