@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:44:55 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/21 18:33:04 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/22 00:01:47 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,14 @@ int	main(int ac, char **av)
 	a = validate_and_convert(ac, av);
 	if (!a)
 		return (1);
+	index_stack(a);
 	b = init_stack(a->size);
 	if (!b)
 	{
 		free_stack(a);
 		print_error_and_exit();
 	}
-	sort_stack(a, b);
+	turk_sort(a, b);
 	free_stack(a);
 	free_stack(b);
 	return (0);

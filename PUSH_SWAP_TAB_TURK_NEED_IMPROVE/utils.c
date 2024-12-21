@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:00:58 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/20 17:41:56 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/21 23:38:03 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	free_stack(t_stack *stack)
 	{
 		if (stack->array)
 			free(stack->array);
+		if (stack->index)
+			free(stack->index);
 		free(stack);
 	}
 }

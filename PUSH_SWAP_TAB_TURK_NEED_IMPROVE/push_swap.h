@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:57:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/21 18:17:25 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/22 00:11:22 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,12 @@ typedef struct s_stack
 	int		*array;
 	int		size;
 	int		top;
+	int		*index;
 }		t_stack;
 
+//	INDEX STACK
+t_stack		*init_stack(int size);
+void		index_stack(t_stack *stack);
 //	OPERATIONS 1
 int			swap(t_stack *stack);
 int			push(t_stack *dest, t_stack *src);
@@ -48,16 +52,17 @@ int			count_words_in_args(int ac, char **av);
 char		*join_arguments(int ac, char **av);
 //	PARSING 2
 t_stack		*validate_and_convert(int ac, char **av);
-//	SORT 1
+//	SORTING FUNCTIONS
 void		sort_three(t_stack *stack);
 void		sort_five(t_stack *a, t_stack *b);
-void		sort_big(t_stack *a, t_stack *b);
+void		turk_sort(t_stack *a, t_stack *b);
 void		sort_stack(t_stack *a, t_stack *b);
-//	STACKS
-t_stack		*init_stack(int size);
-int			find_median(int *array, int len);
-void		split_until_three(t_stack *a, t_stack *b);
+//	SORTING LARGE
+void		calculate_chunks(t_stack *a, int *chunk_count, int *chunk_size);
+int			find_position_in_range(t_stack *a, int min, int max);
+void		push_range(t_stack *a, t_stack *b, int min, int max);
 void		push_back_sorted_chunk(t_stack *a, t_stack *b, int chunk_size);
+
 //	UTILS
 void		free_stack(t_stack *stack);
 void		print_error_and_exit(void);

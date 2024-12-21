@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort1.c                                            :+:      :+:    :+:   */
+/*   sorting_f.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:30:12 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/21 18:33:44 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/22 00:06:06 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,18 +68,29 @@ void	sort_five(t_stack *a, t_stack *b)
 		pa(a, b);
 }
 
-void	sort_big(t_stack *a, t_stack *b)
+void	turk_sort(t_stack *a, t_stack *b)
 {
-	int	initial_size;
+	int	chunk_count;
+	int	chunk_size;
+	int	i;
+	int	min;
+	int	max;
 
-	if (!a || !b || a->top < 3)
-		return ;
 	if (is_sorted(a))
 		return ;
-	initial_size = a->top + 1;
-	split_until_three(a, b);
-	sort_three(a);
-	push_back_sorted_chunk(a, b, initial_size - 3);
+	calculate_chunks(a, &chunk_count, &chunk_size);
+	i = 0;
+	min = 0;
+	max = chunk_size - 1;
+	while (i < chunk_count)
+	{
+		push_range(a, b, min, max);
+		min = max + 1;
+		max = min + chunk_size - 1;
+		i++;
+	}
+	while (b->top >= 0)
+		push_back_sorted_chunk(a, b, chunk_size);
 }
 
 void	sort_stack(t_stack *a, t_stack *b)
@@ -93,5 +104,5 @@ void	sort_stack(t_stack *a, t_stack *b)
 	else if (a->size <= 5)
 		sort_five(a, b);
 	else
-		sort_big(a, b);
+		turk_sort(a, b);
 }
