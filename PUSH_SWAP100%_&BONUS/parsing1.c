@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 16:05:19 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/22 02:41:54 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:37:22 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,47 +59,48 @@ int	has_duplicates(int *arr, int size)
 	return (0);
 }
 
-int	count_words_in_args(int ac, char **av)
+int	count_elements(char **split_args)
 {
 	int	count;
-	int	i;
 
-	i = 1;
 	count = 0;
-	while (i < ac)
-	{
-		count = count + count_words(av[i], ' ');
-		i++;
-	}
+	while (split_args[count])
+		count++;
 	return (count);
 }
 
-static char	*concat_with_space(char *s1, char *s2)
+int	*validate_numbers(char **split_args, int size)
 {
-	char	*temp;
+	int	*numbers;
+	int	i;
 
-	temp = ft_strjoin(s1, s2);
-	free(s1);
-	if (!temp)
+	numbers = malloc(sizeof(int) * size);
+	if (!numbers)
 		print_error_and_exit();
-	return (temp);
-}
-
-char	*join_arguments(int ac, char **av)
-{
-	char	*joined;
-	int		i;
-
-	joined = ft_strdup("");
-	if (!joined)
-		print_error_and_exit();
-	i = 1;
-	while (i < ac)
+	i = 0;
+	while (i < size)
 	{
-		joined = concat_with_space(joined, av[i]);
-		if (i < ac - 1)
-			joined = concat_with_space(joined, " ");
+		if (!ft_isnumber(split_args[i]))
+		{
+			free(numbers);
+			print_error_and_exit();
+		}
+		numbers[i] = (int)safe_atoi(split_args[i]);
 		i++;
 	}
-	return (joined);
+	has_duplicates(numbers, size);
+	return (numbers);
+}
+
+void	fill_stack(t_stack *stack, int *numbers, int size)
+{
+	int	i;
+
+	i = 0;
+	while (i < size)
+	{
+		stack->array[i] = numbers[size - 1 - i];
+		stack->top = i;
+		i++;
+	}
 }

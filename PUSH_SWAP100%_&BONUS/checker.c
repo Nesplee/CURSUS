@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 15:05:24 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 15:44:28 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 18:38:59 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,15 @@ static int	execute_instruction(t_stack *a, t_stack *b, char *line)
 	return (0);
 }
 
+static int	validate_instruction(char *line)
+{
+	if (!line || !*line)
+		return (0);
+	if (line[0] == ' ' || line[ft_strlen(line) - 2] == ' ')
+		return (0);
+	return (1);
+}
+
 static void	read_and_execute(t_stack *a, t_stack *b)
 {
 	char	*line;
@@ -46,9 +55,18 @@ static void	read_and_execute(t_stack *a, t_stack *b)
 	line = get_next_line(0);
 	while (line)
 	{
+		if (!validate_instruction(line))
+		{
+			free(line);
+			free_stack(a);
+			free_stack(b);
+			print_error_and_exit();
+		}
 		if (!execute_instruction(a, b, line))
 		{
 			free(line);
+			free_stack(a);
+			free_stack(b);
 			print_error_and_exit();
 		}
 		free(line);

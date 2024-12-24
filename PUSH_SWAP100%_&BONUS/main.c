@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:44:55 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/22 00:01:47 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:26:32 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(int ac, char **av)
 		free_stack(a);
 		print_error_and_exit();
 	}
-	turk_sort(a, b);
+	sort_stack(a, b);
 	free_stack(a);
 	free_stack(b);
 	return (0);

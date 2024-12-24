@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:57:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 14:40:55 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 16:37:09 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,9 @@ void		rrr(t_stack *a, t_stack *b);
 //	PARSING 1
 long		safe_atoi(const char *str);
 int			has_duplicates(int *arr, int size);
-int			count_words_in_args(int ac, char **av);
-char		*join_arguments(int ac, char **av);
+int			count_elements(char **split_args);
+int			*validate_numbers(char **split_args, int size);
+void		fill_stack(t_stack *stack, int *numbers, int size);
 //	PARSING 2
 t_stack		*validate_and_convert(int ac, char **av);
 //	SORTING FUNCTIONS
