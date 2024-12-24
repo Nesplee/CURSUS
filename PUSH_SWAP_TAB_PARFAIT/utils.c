@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:00:58 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/22 04:11:56 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 15:42:12 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	is_sorted(t_stack *stack)
 	i = 0;
 	while (i < stack->top)
 	{
-		if (stack->array[i] >= stack->array[i + 1])
+		if (stack->array[i] < stack->array[i + 1])
 			return (0);
 		i++;
 	}
