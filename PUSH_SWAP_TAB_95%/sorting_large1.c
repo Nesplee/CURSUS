@@ -6,60 +6,69 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 01:22:43 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 13:10:23 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 13:51:29 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	ft_cbrt(int n)
-{
-	int	i;
-
-	i = 1;
-	while (i * i * i <= n)
-		i++;
-	return (i - 1);
-}
-
-static int	ft_log2(int n)
-{
-	int	count;
-
-	count = 0;
-	while (n > 1)
-	{
-		n /= 2;
-		count++;
-	}
-	return (count);
-}
-
 void	calculate_chunks(t_stack *a, int *chunk_count, int *chunk_size)
 {
 	int	size;
-	int	optimal_chunks;
 
 	size = a->top + 1;
 	if (size <= 100)
-	{
-		optimal_chunks = ft_cbrt(size) * 2;
-		if (optimal_chunks < 4)
-			optimal_chunks = 4;
-		else if (optimal_chunks > 6)
-			optimal_chunks = 6;
-	}
+		*chunk_count = 5;
 	else
-	{
-		optimal_chunks = ft_log2(size) * 1.5;
-		if (optimal_chunks < 8)
-			optimal_chunks = 8;
-		else if (optimal_chunks > 12)
-			optimal_chunks = 12;
-	}
-	*chunk_count = optimal_chunks;
-	*chunk_size = size / optimal_chunks;
-	if (size % optimal_chunks)
+		*chunk_count = 9;
+	*chunk_size = size / *chunk_count;
+	if (size % *chunk_count)
 		(*chunk_size)++;
 }
 
+static int	find_max_position(t_stack *stack)
+{
+	int	i;
+	int	max_pos;
+
+	i = stack->top;
+	max_pos = stack->top;
+	while (i >= 0)
+	{
+		if (stack->index[i] > stack->index[max_pos])
+			max_pos = i;
+		i--;
+	}
+	return (max_pos);
+}
+
+void	push_back_sorted_chunk(t_stack *a, t_stack *b, int chunk_size)
+{
+	int	pushed;
+	int	max_pos;
+
+	pushed = 0;
+	while (pushed < chunk_size && b->top >= 0)
+	{
+		max_pos = find_max_position(b);
+		if (max_pos == b->top)
+		{
+			pa(a, b);
+			pushed++;
+		}
+		else if (max_pos == b->top - 1)
+		{
+			sb(b);
+			pa(a, b);
+			pushed++;
+		}
+		else if (max_pos > b->top / 2)
+		{
+			rb(b);
+		}
+		else
+		{
+			rrb(b);
+		}
+	}
+}

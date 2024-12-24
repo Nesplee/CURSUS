@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:42:25 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 13:06:20 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 13:23:12 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,6 @@ static int	find_next_in_range(t_stack *stack, int min, int max)
 		j++;
 	}
 	return (-1);
-}
-
-static int	find_max_position(t_stack *stack)
-{
-	int	i;
-	int	max_pos;
-
-	i = stack->top;
-	max_pos = stack->top;
-	while (i >= 0)
-	{
-		if (stack->index[i] > stack->index[max_pos])
-			max_pos = i;
-		i--;
-	}
-	return (max_pos);
 }
 
 static int	count_elements_in_range(t_stack *stack, int min, int max)
@@ -89,27 +73,5 @@ void	push_range(t_stack *a, t_stack *b, int min, int max)
 			ra(a);
 		else
 			rra(a);
-	}
-}
-
-void	push_back_sorted_chunk(t_stack *a, t_stack *b, int chunk_size)
-{
-	int	pushed;
-	int	max_pos;
-
-	pushed = 0;
-	while (pushed < chunk_size && b->top >= 0)
-	{
-		max_pos = find_max_position(b);
-		while (max_pos != b->top)
-		{
-			if (max_pos > b->top / 2)
-				rb(b);
-			else
-				rrb(b);
-			max_pos = find_max_position(b);
-		}
-		pa(a, b);
-		pushed++;
 	}
 }

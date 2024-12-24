@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Génère une liste aléatoire de 500 nombres
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`
+ARG=`ruby -e "puts (1..100).to_a.shuffle.join(' ')"`
 
 echo "Test avec 500 nombres:"
 echo "Total pb: $(./push_swap $ARG | grep -c "pb")"
