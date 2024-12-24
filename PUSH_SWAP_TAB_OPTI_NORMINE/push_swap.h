@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:57:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 13:23:03 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 14:40:55 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,13 @@ typedef struct s_stack
 	int		top;
 	int		*index;
 }		t_stack;
+
+typedef struct s_range
+{
+	int	min;
+	int	max;
+	int	mid;
+}	t_range;
 
 //	INDEX STACK
 t_stack		*init_stack(int size);

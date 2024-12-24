@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 01:22:43 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 13:51:29 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 14:21:23 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,8 @@ void	push_back_sorted_chunk(t_stack *a, t_stack *b, int chunk_size)
 			pushed++;
 		}
 		else if (max_pos > b->top / 2)
-		{
 			rb(b);
-		}
 		else
-		{
 			rrb(b);
-		}
 	}
 }
