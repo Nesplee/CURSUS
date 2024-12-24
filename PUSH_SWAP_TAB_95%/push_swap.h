@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:57:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/22 00:11:22 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/24 13:12:26 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,9 @@ void		sort_stack(t_stack *a, t_stack *b);
 //	SORTING LARGE
 void		calculate_chunks(t_stack *a, int *chunk_count, int *chunk_size);
 int			find_position_in_range(t_stack *a, int min, int max);
+//	SORTING LARGE 2
 void		push_range(t_stack *a, t_stack *b, int min, int max);
 void		push_back_sorted_chunk(t_stack *a, t_stack *b, int chunk_size);
-
 //	UTILS
 void		free_stack(t_stack *stack);
 void		print_error_and_exit(void);

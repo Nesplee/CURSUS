@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/19 20:14:28 by dinguyen          #+#    #+#              #
-#    Updated: 2024/12/22 00:07:08 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/12/22 01:24:52 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,8 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
 SRCS = index_stack.c main.c operations1.c operations2.c operations3.c \
-	operations4.c parsing1.c parsing2.c sorting_functions.c sorting_large.c \
-	utils.c
+	operations4.c parsing1.c parsing2.c sorting_functions.c sorting_large1.c \
+	sorting_large2.c utils.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
