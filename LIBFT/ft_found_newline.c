@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_found_newline.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 16:16:57 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/17 14:52:28 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/12/17 14:53:09 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/12/17 14:53:24 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int	found_newline(const char *str)
 {
-	int	c;
+	int	i;
 
-	if (str == NULL)
-		return (0);
-	c = 0;
-	while (str[c])
-		c++;
-	return (c);
+	i = 0;
+	while (str && str[i])
+	{
+		if (str[i] == '\n')
+			return (i);
+		i++;
+	}
+	return (-1);
 }

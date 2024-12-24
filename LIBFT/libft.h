@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:00:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/11/29 10:40:09 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/17 15:09:24 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stdarg.h>
 # include <fcntl.h>
 # include <limits.h>
-# include "../push_swap.h"
+# include "GNL/get_next_line.h"
 
 typedef struct s_list
 {
@@ -33,6 +33,7 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_isalnum(int c);
 int		ft_isnumber(const char *str);
+int		found_newline(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	ft_swap(int *a, int *b);
@@ -54,7 +55,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char *s1, char *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(const char *s);
+size_t	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

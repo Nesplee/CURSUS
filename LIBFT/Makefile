@@ -6,7 +6,7 @@
 #    By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 21:00:48 by dinguyen          #+#    #+#              #
-#    Updated: 2024/11/29 10:45:58 by dinguyen         ###   ########.fr        #
+#    Updated: 2024/12/17 15:14:30 by dinguyen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,14 @@ SRCS =	ft_bzero.c ft_calloc.c	ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
 	ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c \
 	ft_lstsize_bonus.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_puthex.c \
 	ft_putptr.c ft_putunbr.c ft_printf.c ft_isnumber.c ft_strcmp.c \
-	ft_split_free.c ft_swap.c
+	ft_split_free.c ft_swap.c ft_found_newline.c
 
-OBJ = $(SRCS:.c=.o)
+GNL_DIR = GNL
+GNL_SRCS = $(GNL_DIR)/get_next_line.c
+GNL_OBJS = $(GNL_SRCS:.c=.o)
+
+ALL_SRCS = $(SRCS) $(GNL_SRCS)
+OBJ = $(SRCS:.c=.o) $(GNL_OBJS)
 
 all: $(NAME)
 
@@ -38,6 +43,9 @@ $(NAME): $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+$(GNL_DIR)/%.o: $(GNL_DIR)/%.c
+	$(CC) $(CFLAGS) -I. -c $< -o $@
 
 clean:
 	rm -f $(OBJ)

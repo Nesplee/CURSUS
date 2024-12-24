@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 16:16:57 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/17 14:52:28 by dinguyen         ###   ########.fr       */
+/*   Created: 2024/10/25 15:14:31 by dinguyen          #+#    #+#             */
+/*   Updated: 2024/12/17 15:15:46 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+# define MAX_FD 1024
 
-size_t	ft_strlen(const char *str)
-{
-	int	c;
+# include "../libft.h"
 
-	if (str == NULL)
-		return (0);
-	c = 0;
-	while (str[c])
-		c++;
-	return (c);
-}
+char	*get_next_line(int fd);
+int		found_newline(const char *str);
+
+#endif
