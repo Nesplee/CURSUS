@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 13:57:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 16:37:09 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/25 18:09:09 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ t_stack		*validate_and_convert(int ac, char **av);
 //	SORTING FUNCTIONS
 void		sort_three(t_stack *stack);
 void		sort_five(t_stack *a, t_stack *b);
-void		turk_sort(t_stack *a, t_stack *b);
+void		my_turk_sort(t_stack *a, t_stack *b);
 void		sort_stack(t_stack *a, t_stack *b);
 //	SORTING LARGE
 void		calculate_chunks(t_stack *a, int *chunk_count, int *chunk_size);

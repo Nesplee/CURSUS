@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:30:12 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/22 04:54:22 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/25 18:09:14 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ void	sort_five(t_stack *a, t_stack *b)
 		pa(a, b);
 }
 
-void	turk_sort(t_stack *a, t_stack *b)
+void	my_turk_sort(t_stack *a, t_stack *b)
 {
 	int	chunk_count;
 	int	chunk_size;
@@ -104,5 +104,5 @@ void	sort_stack(t_stack *a, t_stack *b)
 	else if (a->size <= 5)
 		sort_five(a, b);
 	else
-		turk_sort(a, b);
+		my_turk_sort(a, b);
 }

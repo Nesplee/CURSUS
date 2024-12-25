@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:42:25 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 14:45:25 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/25 20:19:43 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	find_shortest_path(t_stack *stack, int pos)
 	return (-down_moves);
 }
 
-static void	handle_push_rotate(t_stack *a, t_stack *b, t_range *r, int *pushed)
+static void	handle_push_rotate(t_stack *a, t_stack *b, t_range *r)
 {
 	int	next_pos;
 
@@ -54,7 +54,6 @@ static void	handle_push_rotate(t_stack *a, t_stack *b, t_range *r, int *pushed)
 		else
 			rb(b);
 	}
-	(*pushed)++;
 }
 
 static void	handle_rotation(t_stack *a, int pos)
@@ -72,11 +71,9 @@ static void	handle_rotation(t_stack *a, int pos)
 
 void	push_range(t_stack *a, t_stack *b, int min, int max)
 {
-	int		pushed;
 	int		pos;
 	t_range	r;
 
-	pushed = 0;
 	r.min = min;
 	r.max = max;
 	r.mid = min + ((max - min) / 2);
@@ -84,7 +81,7 @@ void	push_range(t_stack *a, t_stack *b, int min, int max)
 	while (pos != -1)
 	{
 		if (pos == a->top)
-			handle_push_rotate(a, b, &r, &pushed);
+			handle_push_rotate(a, b, &r);
 		else
 			handle_rotation(a, pos);
 		pos = find_next_in_range(a, r.min, r.max);
