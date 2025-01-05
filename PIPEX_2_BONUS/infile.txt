@@ -1,0 +1,7 @@
+Hello World
+This is a test file
+And this is another line
+Testing sed command here
+Special chars: $#@!
+Multiple     spaces    here
+Line with "quotes" and 'quotes'

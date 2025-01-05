@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:00:58 by dinguyen          #+#    #+#             */
-/*   Updated: 2024/12/24 15:42:12 by dinguyen         ###   ########.fr       */
+/*   Updated: 2024/12/25 22:01:36 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	is_sorted(t_stack *stack)
 	return (1);
 }
 
+//	INUTILISEE
 int	find_max_index(t_stack *stack)
 {
 	int	i;
