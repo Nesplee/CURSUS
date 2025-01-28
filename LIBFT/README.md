@@ -117,8 +117,6 @@ Libft is a fundamental project that we'll build and use throughout the cursus. I
   <img src=".assets/Illu_Libft2.png" alt="LIBFT Details" width="300px"/>
 </div>
 
-<div align="center">
-
 ### 🎯 Key Learning Outcomes
 - Deep understanding of C programming fundamentals
 - Memory management mastery
@@ -131,8 +129,6 @@ Libft is a fundamental project that we'll build and use throughout the cursus. I
 - Imperative Programming
 - Unix
 - Rigor
-
-</div>
 
 ### ⏰ Hours Spent: ~70 hours
 
