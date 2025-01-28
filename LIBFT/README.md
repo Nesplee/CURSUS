@@ -17,7 +17,7 @@
 This project is the first step of my journey at 42Lausanne, after succeeding the Piscine.
 Libft is a fundamental project that we'll build and use throughout the cursus. It consists of coding basic C functions and assembling them to create my first library.
 
-#### 📖 [Read the subject here](DOCS/Libft.en.pdf)
+#### 📖 [Read the subject here](.assets/Libft.en.pdf)
 
 </div>
 
