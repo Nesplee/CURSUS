@@ -18,26 +18,38 @@ Each project represents a step in my learning journey, from basic C programming 
 # 📚 Projects Timeline
 
 </div>
+
+<div align="center">
+
 ### 1st Circle 💫
 | Project | Description | Grade |
 |:-------:|:------------|:-----:|
-| [![Libft](.assets/Bands/Bandeau_Libft.jpg)](/LIBFT/) | First C library | <img src=".assets/NOTES/100.png" width="75px"/> |
-| [![Printf](.assets/Bands/Bandeau_ftprintf.jpg)](/FT_PRINTF/) | Printf recoding | <img src=".assets/NOTES/100.png" width="75px"/> |
-| [![GNL](.assets/Bands/Bandeau_GNL.jpg)](/GET_NEXT_LINE/) | Reading function | <img src=".assets/NOTES/112.png" width="75px"/> |
-| [![B2BR](.assets/Bands/Bandeau_born2beroot.jpg)](/BORN2BEROOT/) | System administration | <img src=".assets/NOTES/100.png" width="75px"/> |
+| <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a> | First C library | <img src=".assets/NOTES/100.png" width="100px"/> |
+| <a href="/FT_PRINTF/"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a> | Printf recoding | <img src=".assets/NOTES/100.png" width="100px"/> |
+| <a href="/GET_NEXT_LINE/"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a> | Reading function | <img src=".assets/NOTES/112.png" width="100px"/> |
+| <a href="/BORN2BEROOT/"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a> | System administration | <img src=".assets/NOTES/100.png" width="100px"/> |
+
+</div>
+
+<div align="center">
 
 ### 2nd Circle 💫
-
 | Project | Description | Grade |
 |:-------:|:------------|:-----:|
-| [![Pipex](.assets/Bands/Bandeau_pipex.jpg)](/PIPEX/) | Unix pipes | <img src=".assets/NOTES/125.png" width="75px"/> |
-| [![Push_swap](.assets/Bands/Bandeau_pushswap.jpg)](/PUSH_SWAP/) | Sorting algorithm | <img src=".assets/NOTES/125.png" width="75px"/> |
-| [![So_long](.assets/Bands/Bandeau_Solong.jpg)](/SO_LONG/) | 2D Game | <img src=".assets/NOTES/125.png" width="75px"/> |
+| <a href="/PIPEX/"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a> | Unix pipes | <img src=".assets/NOTES/125.png" width="100px"/> |
+| <a href="/PUSH_SWAP/"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a> | Sorting algorithm | <img src=".assets/NOTES/125.png" width="100px"/> |
+| <a href="/SO_LONG/"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a> | 2D Game | <img src=".assets/NOTES/125.png" width="100px"/> |
+
+</div>
+
+<div align="center">
 
 ### Exam Results 📝
 | Exam | Exercises | Grade |
 |:----:|:----------|:-----:|
-| <img src=".assets/Bands/Bandeau_examrank02.jpg" width="100px"/> | ROTONE (25pts)<br>FT_STRDUP (25pts)<br>PGCD (25pts)<br>FT_ITOA (25pts) | <img src=".assets/NOTES/100.png" width="75px"/> |
+| <img src=".assets/Bands/Bandeau_examrank02.jpg" width="100px"/> | ROTONE (25pts)<br>FT_STRDUP (25pts)<br>PGCD (25pts)<br>FT_ITOA (25pts) | <img src=".assets/NOTES/100.png" width="100px"/> |
+
+</div>
 
 ### Validated on December 23, 2024
 
