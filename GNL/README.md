@@ -61,6 +61,6 @@ A key step to understand how files are handled on C, how the memory works and wh
 
 <img src=".assets/112.png" alt="GNL Grade" width="200px"/>
 
-### Validated on October 28, 2024
+### Validated on October 27, 2024
 
 </div>
