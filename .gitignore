@@ -8,10 +8,10 @@
 *.swp
 
 # Assets management (global rule)
-LIBFT/.assets/
-!LIBFT/.assets/*.jpg
-!LIBFT/.assets/*.png
-!LIBFT/.assets/*.gif
+**/.assets/
+!**/.assets/**/*.jpg
+!**/.assets/**/*.png
+!**/.assets/**/*.gif
 
 # Project specific
 */obj/
