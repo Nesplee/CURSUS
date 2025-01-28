@@ -1,0 +1,13 @@
+# Compiled files
+*.o
+*.a
+
+# System files
+.DS_Store
+.vscode/
+*.swp
+
+# Assets management
+.assets/*
+!.assets/*.jpg
+!.assets/*.png
