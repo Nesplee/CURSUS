@@ -112,11 +112,29 @@ Libft is a fundamental project that we'll build and use throughout the cursus. I
 
 </div>
 
-# LIBFT
 
-| Contenu Principal | Détails |
-|------------------|---------|
-| ### 🎯 Key Learning Outcomes<br>- Deep understanding of C programming fundamentals<br>- Memory management mastery<br>- Data structures implementation<br>- Code optimization techniques<br>- Rigorous testing methodology<br><br>### 🛠️ Skills Developed<br>- Algorithms & AI<br>- Imperative Programming<br>- Unix<br>- Rigor<br><br>### ⏰ Hours Spent: ~70 hours | ![LIBFT Details](.assets/Illu_Libft2.png) |
+<div align="center">
+  <img src=".assets/Illu_Libft2.png" alt="LIBFT Details" width="300px"/>
+</div>
+
+<div align="center">
+
+### 🎯 Key Learning Outcomes
+- Deep understanding of C programming fundamentals
+- Memory management mastery
+- Data structures implementation
+- Code optimization techniques
+- Rigorous testing methodology
+
+### 🛠️ Skills Developed
+- Algorithms & AI
+- Imperative Programming
+- Unix
+- Rigor
+
+</div>
+
+### ⏰ Hours Spent: ~70 hours
 
 <div align="center">
 
