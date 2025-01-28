@@ -88,9 +88,9 @@ A perfect first step into game development at 42, mastering window management, e
 ### Static Tiles 🏞️
 | Asset | Description |
 |:-----:|:------------|
-| <img src=".assets/img_wall.xpm" width="32px"/> | Wall tile |
-| <img src=".assets/img_floor.xpm" width="32px"/> | Floor tile |
-| <img src=".assets/img_exit.xpm" width="32px"/> | Exit door |
+| <img src=".assets/wall.png" width="32px"/> | Wall tile |
+| <img src=".assets/floor.png" width="32px"/> | Floor tile |
+| <img src=".assets/exit.png" width="32px"/> | Exit door |
 
 ### Animations 🎬
 | Asset | Preview |
