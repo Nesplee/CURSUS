@@ -48,16 +48,15 @@ This will be our first step into string formatting that goes far beyond printing
 
 | Format | Description |
 |:------:|:------------|
-| `%c` | Affiche un caractère |
-| `%s` | Affiche une chaîne de caractères |
-| `%p` | Affiche un pointeur en hexadécimal |
-| `%d` | Affiche un nombre décimal |
-| `%i` | Affiche un entier |
-| `%u` | Affiche un nombre non signé |
-| `%x` | Affiche un nombre en hexadécimal (minuscules) |
-| `%X` | Affiche un nombre en hexadécimal (majuscules) |
-| `%%` | Affiche le symbole % |
-
+| `%c` | Print a character |
+| `%s` | Print a string |
+| `%p` | Print a pointer in hexadecimal |
+| `%d` | Print a decimal number |
+| `%i` | Print an integer |
+| `%u` | Print an unsigned number |
+| `%x` | Print a number in hexadecimal (lowercase) |
+| `%X` | Print a number in hexadecimal (uppercase) |
+| `%%` | Print the % symbol |
 
 ## 🔍 Project Details
 
