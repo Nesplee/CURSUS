@@ -52,7 +52,7 @@ You said you had your own printf? Now you have your own pipeline 😎
 
 <div align="center">
 
-## 💭 How it Works
+## 💭 Sketches
 
 <img src=".assets/Pipex.png" alt="PIPEX Schema" width="800px"/>
 
