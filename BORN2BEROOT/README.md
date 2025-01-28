@@ -14,7 +14,7 @@
 
 ## 🎯 ABOUT 🎯
 
-This project aims to introduce ourselves to the <span style="color:red">Wonderful</span> world of virtualization.
+This project aims to introduce ourselves to the WONDERFUL world of virtualization.
 We'll create our first machine in VirtualBox under specific and strict rules.
 This will be our first step into system administration.
 
