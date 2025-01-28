@@ -5,6 +5,12 @@
 </div>
 
 <div align="center">
+  <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
+
+### *Keep Working*
+</div>
+
+<div align="center">
 
 ## 🎯 ABOUT 🎯
 
@@ -44,14 +50,25 @@ Each project represents a step in my learning journey, from basic C programming 
 
 <div align="center">
 
-### Exam Results 📝
+#### Exam Results 📝
+
+### Exam Rank 02
+
 | Exam | Exercises | Grade |
 |:----:|:----------|:-----:|
 | <img src=".assets/Bands/Bandeau_examrank02.jpg" width="100px"/> | ROTONE (25pts)<br>FT_STRDUP (25pts)<br>PGCD (25pts)<br>FT_ITOA (25pts) | <img src=".assets/NOTES/100.png" width="100px"/> |
 
 </div>
 
+<div align="center">
+
 ### Validated on December 23, 2024
+
+</div>
+
+<div align="center">
+  <img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="300px"/>
+</div>
 
 <div align="center">
 
