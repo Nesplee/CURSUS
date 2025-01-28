@@ -130,7 +130,8 @@ Note: Several functions were added to enhance the library beyond the project's r
 
 ## ⭐ Results
 
-### Validated on October 11, 2024
 <img src=".assets/Note.png" alt="LIBFT Grade" width="200px"/>
+
+### Validated on October 11, 2024
 
 </div>
