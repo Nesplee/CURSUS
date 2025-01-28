@@ -7,11 +7,11 @@
 .vscode/
 *.swp
 
-# Assets management (autoriser les images mais cacher le dossier)
-.assets/
-!.assets/*.jpg
-!.assets/*.png
-!.assets/*.gif
+# Assets management (global rule)
+LIBFT/.assets/
+!LIBFT/.assets/*.jpg
+!LIBFT/.assets/*.png
+!LIBFT/.assets/*.gif
 
 # Project specific
 */obj/

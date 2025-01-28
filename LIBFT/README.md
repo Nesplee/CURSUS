@@ -132,8 +132,8 @@ Libft is a fundamental project that we'll build and use throughout the cursus. I
 
   </div>
 
-  <div style="width: 35%; margin-top: 1em;">
-    <img src=".assets/Illu_Libft2.png" alt="LIBFT Details" width="80%"/>
+  <div style="width: 30%; margin-top: 1em;">
+    <img src=".assets/Illu_Libft2.png" alt="LIBFT Details" width="60%"/>
   </div>
 </div>
 
