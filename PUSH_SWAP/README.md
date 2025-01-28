@@ -20,6 +20,12 @@ To achieve this, we created a hybrid approach combining chunk sorting efficiency
 
 </div>
 
+<div align="center">
+
+# 📚 Project Components
+
+</div>
+
 ### 1. Main Functions 🎯
 - [`main.c`](main.c) - Program entry point
 - [`push_swap.h`](push_swap.h) - Header file with prototypes
@@ -96,7 +102,7 @@ To achieve this, we created a hybrid approach combining chunk sorting efficiency
 |:------------------------|:-------------------|
 | • Sorting algorithms<br>• Stack operations<br>• Algorithm optimization<br>• Performance analysis | • Rigor<br>• Unix<br>• Algorithms & AI<br>• Imperative Programming |
 
-### ⏰ Hours Spent: ~50 hours
+### ⏰ Hours Spent: ~80 hours
 
 </div>
 
