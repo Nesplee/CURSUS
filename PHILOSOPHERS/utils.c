@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 15:00:51 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 18:34:50 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 20:29:27 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,23 +49,6 @@ int	ft_is_number(char *str)
 	return (1);
 }
 
-void	ft_usleep(long long time_to_wait)
-{
-	long long	start_time;
-	long long	current_time;
-	long long	elapsed_time;
-
-	start_time = get_current_time();
-	while (1)
-	{
-		current_time = get_current_time();
-		elapsed_time = current_time - start_time;
-		if (elapsed_time >= time_to_wait)
-			break ;
-		usleep(100);
-	}
-}
-
 int	ft_atoi(const char *str)
 {
 	long	result;
@@ -83,14 +66,28 @@ int	ft_atoi(const char *str)
 	return ((int)result);
 }
 
+static int	is_died(const char *status)
+{
+	int		i;
+	char	*d;
+
+	d = "died";
+	i = 0;
+	while (status[i] && d[i] && status[i] == d[i])
+		i++;
+	if (!status[i] && !d[i])
+		return (1);
+	return (0);
+}
+
 void	print_status(t_philo *philo, char *status)
 {
 	long long	current_time;
 
 	pthread_mutex_lock(philo->w_mutex);
-	if (!philo->config->dead)
+	current_time = get_current_time() - philo->config->start_time;
+	if (!philo->config->dead || is_died(status))
 	{
-		current_time = get_current_time() - philo->config->start_time;
 		printf("%lld %d %s\n", current_time, philo->id + 1, status);
 	}
 	pthread_mutex_unlock(philo->w_mutex);

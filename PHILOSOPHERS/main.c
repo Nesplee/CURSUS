@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:13:47 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 18:57:47 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 20:10:39 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,18 @@ static int	start_simulation(t_philo *philos, t_config *cfg)
 	pthread_t	monitor;
 	int			i;
 
-	i = 0;
 	cfg->start_time = get_current_time();
+	i = 0;
 	while (i < cfg->num_philos)
 	{
 		philos[i].last_meal = cfg->start_time;
 		i++;
 	}
-	if (pthread_create(&monitor, NULL, monitor_routine, (void *)philos) != 0)
+	if (pthread_create(&monitor, NULL, monitor_routine, philos) != 0)
 		return (ERROR);
-	usleep(100);
 	if (create_threads(philos, cfg) == ERROR)
 		return (ERROR);
-	if (pthread_join(monitor, NULL) != 0)
-		return (ERROR);
+	pthread_join(monitor, NULL);
 	join_threads(philos, cfg);
 	return (SUCCESS);
 }

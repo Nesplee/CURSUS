@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 14:18:36 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 18:49:58 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 20:47:12 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,15 +66,16 @@ int			init_all(t_config *cfg, t_philo **philos);
 void		cleanup(t_philo *philos, t_config *cfg);
 //	MONITORING
 void		*monitor_routine(void *arg);
-int			check_death(t_philo *p);
 //	PARSE
 int			parse_args(int ac, char **av, t_config *cfg);
+void		ft_usleep(long long time_to_wait);
 //	ROUTINE
+void		take_forks(t_philo *p);
 void		*philo_routine(void *arg);
+
 // UTILS
 long long	get_current_time(void);
 int			ft_is_number(char *str);
-void		ft_usleep(long long time_to_wait);
 int			ft_atoi(const char *str);
 void		print_status(t_philo *philo, char *status);
 
