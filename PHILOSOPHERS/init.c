@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:06:42 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 18:36:08 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 17:51:34 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,10 @@ int	init_all(t_config *cfg, t_philo **philos)
 	{
 		pthread_mutex_init(&forks[i].mutex, NULL);
 		forks[i].id = i;
-		init_philo(&(*philos)[i], i, cfg, forks);
+		init_philo(&philos[0][i], i, cfg, forks);
 		i++;
 	}
+	usleep(100);
 	pthread_mutex_init(&cfg->dead_mutex, NULL);
 	pthread_mutex_init(&cfg->write_mutex, NULL);
 	return (SUCCESS);

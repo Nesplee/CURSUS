@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:07:43 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 20:10:11 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 17:55:18 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,13 +52,12 @@ static void	eat(t_philo *p)
 	take_forks(p);
 	pthread_mutex_lock(&p->config->dead_mutex);
 	p->last_meal = get_current_time();
+	p->is_eating = 1;
 	p->meals_eaten++;
 	pthread_mutex_unlock(&p->config->dead_mutex);
-	if (!p->config->dead)
-	{
-		print_status(p, EATING);
-		ft_usleep(p->config->t_to_eat);
-	}
+	print_status(p, EATING);
+	ft_usleep(p->config->t_to_eat);
+	p->is_eating = 0;
 	pthread_mutex_unlock(&p->r_fork->mutex);
 	pthread_mutex_unlock(&p->l_fork->mutex);
 }

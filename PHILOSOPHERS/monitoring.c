@@ -6,19 +6,33 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:26:38 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/01/31 20:10:31 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/02 17:57:08 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
+static int	all_philos_ate_enough(t_philo *philos, t_config *cfg)
+{
+	int	i;
+
+	i = 0;
+	while (i < cfg->num_philos)
+	{
+		if (philos[i].meals_eaten < cfg->must_eat)
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
 static int	check_philosopher_status(t_philo *philo, t_config *cfg)
 {
 	long long	current_time;
 
-	current_time = get_current_time();
 	pthread_mutex_lock(&cfg->dead_mutex);
-	if (current_time - philo->last_meal > cfg->t_to_die && !cfg->dead)
+	current_time = get_current_time();
+	if (!philo->is_eating && (current_time - philo->last_meal > cfg->t_to_die))
 	{
 		cfg->dead = 1;
 		pthread_mutex_unlock(&cfg->dead_mutex);
@@ -29,31 +43,7 @@ static int	check_philosopher_status(t_philo *philo, t_config *cfg)
 	return (0);
 }
 
-static int	check_philosophers_meals(t_philo *philos, t_config *cfg)
-{
-	int	i;
-	int	all_ate;
-
-	if (cfg->must_eat <= 0)
-		return (0);
-	pthread_mutex_lock(&cfg->dead_mutex);
-	i = -1;
-	all_ate = 1;
-	while (++i < cfg->num_philos)
-	{
-		if (philos[i].meals_eaten < cfg->must_eat)
-		{
-			all_ate = 0;
-			break ;
-		}
-	}
-	if (all_ate)
-		cfg->dead = 1;
-	pthread_mutex_unlock(&cfg->dead_mutex);
-	return (all_ate);
-}
-
-static int	check_philosophers_death(t_philo *philos, t_config *cfg)
+static int	check_end_conditions(t_philo *philos, t_config *cfg)
 {
 	int	i;
 
@@ -61,10 +51,14 @@ static int	check_philosophers_death(t_philo *philos, t_config *cfg)
 	while (++i < cfg->num_philos)
 	{
 		if (check_philosopher_status(&philos[i], cfg))
-		{
-			usleep(1000);
 			return (1);
-		}
+	}
+	if (cfg->must_eat > 0 && all_philos_ate_enough(philos, cfg))
+	{
+		pthread_mutex_lock(&cfg->dead_mutex);
+		cfg->dead = 1;
+		pthread_mutex_unlock(&cfg->dead_mutex);
+		return (1);
 	}
 	return (0);
 }
@@ -78,9 +72,7 @@ void	*monitor_routine(void *arg)
 	cfg = philos[0].config;
 	while (!cfg->dead)
 	{
-		if (check_philosophers_death(philos, cfg))
-			return (NULL);
-		if (check_philosophers_meals(philos, cfg))
+		if (check_end_conditions(philos, cfg))
 			return (NULL);
 		usleep(100);
 	}
