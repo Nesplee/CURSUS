@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 15:00:51 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/02/02 20:29:27 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/04 14:39:57 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,12 +83,15 @@ static int	is_died(const char *status)
 void	print_status(t_philo *philo, char *status)
 {
 	long long	current_time;
+	int			should_print;
 
 	pthread_mutex_lock(philo->w_mutex);
 	current_time = get_current_time() - philo->config->start_time;
-	if (!philo->config->dead || is_died(status))
-	{
+	if (philo->config->dead)
+		should_print = is_died(status);
+	else
+		should_print = 1;
+	if (should_print)
 		printf("%lld %d %s\n", current_time, philo->id + 1, status);
-	}
 	pthread_mutex_unlock(philo->w_mutex);
 }

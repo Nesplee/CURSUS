@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:07:43 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/02/02 20:46:12 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/04 15:49:59 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,7 @@ void	*philo_routine(void *arg)
 	p->last_meal = get_current_time();
 	if (p->config->num_philos == 1)
 	{
-		pthread_mutex_lock(&p->l_fork->mutex);
-		print_status(p, FORK_TAKEN);
-		ft_usleep(p->config->t_to_die);
-		pthread_mutex_unlock(&p->l_fork->mutex);
+		handle_single_philo(p);
 		return (NULL);
 	}
 	while (!p->config->dead)

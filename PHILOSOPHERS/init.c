@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:06:42 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/02/02 17:51:34 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/02/04 14:40:38 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,20 @@
 int	create_threads(t_philo *philos, t_config *cfg)
 {
 	int	i;
-	int	ret;
 
 	i = 0;
-	ret = SUCCESS;
 	while (i < cfg->num_philos)
 	{
 		if (pthread_create(&philos[i].thread, NULL,
 				&philo_routine, &philos[i]) != 0)
-			ret = ERROR;
+		{
+			while (--i >= 0)
+				pthread_join(philos[i].thread, NULL);
+			return (ERROR);
+		}
 		i++;
 	}
-	return (ret);
+	return (SUCCESS);
 }
 
 static void	init_philo(t_philo *philo, int i, t_config *cfg, t_fork *forks)
@@ -49,21 +51,26 @@ int	init_all(t_config *cfg, t_philo **philos)
 	t_fork	*forks;
 	int		i;
 
-	*philos = malloc(sizeof(**philos) * cfg->num_philos);
-	forks = malloc(sizeof(*forks) * cfg->num_philos);
+	*philos = malloc(sizeof(t_philo) * cfg->num_philos);
+	forks = malloc(sizeof(t_fork) * cfg->num_philos);
 	if (!*philos || !forks)
 		return (ERROR);
 	i = 0;
 	while (i < cfg->num_philos)
 	{
-		pthread_mutex_init(&forks[i].mutex, NULL);
+		if (pthread_mutex_init(&forks[i].mutex, NULL) != 0)
+		{
+			free(forks);
+			free(*philos);
+			return (ERROR);
+		}
 		forks[i].id = i;
 		init_philo(&philos[0][i], i, cfg, forks);
 		i++;
 	}
-	usleep(100);
-	pthread_mutex_init(&cfg->dead_mutex, NULL);
-	pthread_mutex_init(&cfg->write_mutex, NULL);
+	if (pthread_mutex_init(&cfg->dead_mutex, NULL) != 0
+		|| pthread_mutex_init(&cfg->write_mutex, NULL) != 0)
+		return (ERROR);
 	return (SUCCESS);
 }
 
