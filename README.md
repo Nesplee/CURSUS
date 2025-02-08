@@ -160,39 +160,48 @@ Each project represents a step in my learning journey, from basic C programming 
 </div>
 
 <div align="center">
-<h2>📊 Evolution du Cursus</h2>
+<h2>📊 Timeline du Cursus</h2>
 
-[![Cursus Progress](https://quickchart.io/chart?c={
-  type:'line',
-  data:{
-    labels:['Oct','Nov','Dec','Jan','Feb'],
-    datasets:[{
-      label:'Projects',
-      data:[3,1,2,2,1],
-      fill:false,
-      borderColor:'#00BABC',
-      pointBackgroundColor:'#DEDEDE',
-      pointRadius:6,
-      tension:0.4
-    }]
-  },
-  options:{
-    plugins:{
-      title:{
-        display:true,
-        text:'42 Cursus Journey'
-      }
-    },
-    scales:{
-      y:{
-        title:{
-          display:true,
-          text:'Circle Level'
-        },
-        min:0,
-        max:3
-      }
-    }
-  }
-})](https://quickchart.io)
+<table width="100%" style="border-collapse: collapse; margin: 20px 0;">
+  <tr style="border-bottom: 2px solid #00BABC;">
+    <td width="20%" align="center">Octobre 2024</td>
+    <td width="20%" align="center">Novembre 2024</td>
+    <td width="20%" align="center">Décembre 2024</td>
+    <td width="20%" align="center">Janvier 2025</td>
+    <td width="20%" align="center">Février 2025</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src=".assets/Bands/Bandeau_Libft.jpg" width="50px"/><br>
+      <small>11 Oct</small><br>
+      <img src=".assets/Bands/Bandeau_ftprintf.jpg" width="50px"/><br>
+      <small>21 Oct</small><br>
+      <img src=".assets/Bands/Bandeau_GNL.jpg" width="50px"/><br>
+      <small>28 Oct</small>
+    </td>
+    <td align="center">
+      <img src=".assets/Bands/Bandeau_born2beroot.jpg" width="50px"/><br>
+      <small style="color: gold;">✨ Circle 1 Complete ✨</small><br>
+      <small>9 Nov</small>
+    </td>
+    <td align="center">
+      <img src=".assets/Bands/Bandeau_examrank02.jpg" width="50px"/><br>
+      <small style="color: #FF4242;">⭐ Exam 02 ⭐</small><br>
+      <small>23 Dec</small><br>
+      <img src=".assets/Bands/Bandeau_pushswap.jpg" width="50px"/><br>
+      <small>30 Dec</small>
+    </td>
+    <td align="center">
+      <img src=".assets/Bands/Bandeau_pipex.jpg" width="50px"/><br>
+      <small>15 Jan</small><br>
+      <img src=".assets/Bands/Bandeau_Solong.jpg" width="50px"/><br>
+      <small style="color: gold;">✨ Circle 2 Complete ✨</small><br>
+      <small>27 Jan</small>
+    </td>
+    <td align="center">
+      <img src=".assets/Bands/Bandeau_Philo.jpg" width="50px"/><br>
+      <small>6 Feb</small>
+    </td>
+  </tr>
+</table>
 </div>
