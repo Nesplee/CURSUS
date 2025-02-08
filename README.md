@@ -8,6 +8,8 @@
 <p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
 Each project represents a step in my learning journey, from basic C programming to complex system administration.</p>
 
+<h3><i>💡 Project banners are clickable and lead to their documentation</i></h3>
+
 <!-- First Circle -->
 <table width="100%">
   <tr>
