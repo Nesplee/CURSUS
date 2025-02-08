@@ -160,48 +160,19 @@ Each project represents a step in my learning journey, from basic C programming 
 </div>
 
 <div align="center">
-<h2>📊 Timeline du Cursus</h2>
+<h2>📊 Common Core Timeline</h2>
 
-<table width="100%" style="border-collapse: collapse; margin: 20px 0;">
-  <tr style="border-bottom: 2px solid #00BABC;">
-    <td width="20%" align="center">Octobre 2024</td>
-    <td width="20%" align="center">Novembre 2024</td>
-    <td width="20%" align="center">Décembre 2024</td>
-    <td width="20%" align="center">Janvier 2025</td>
-    <td width="20%" align="center">Février 2025</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_Libft.jpg" width="50px"/><br>
-      <small>11 Oct</small><br>
-      <img src=".assets/Bands/Bandeau_ftprintf.jpg" width="50px"/><br>
-      <small>21 Oct</small><br>
-      <img src=".assets/Bands/Bandeau_GNL.jpg" width="50px"/><br>
-      <small>28 Oct</small>
-    </td>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_born2beroot.jpg" width="50px"/><br>
-      <small style="color: gold;">✨ Circle 1 Complete ✨</small><br>
-      <small>9 Nov</small>
-    </td>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_examrank02.jpg" width="50px"/><br>
-      <small style="color: #FF4242;">⭐ Exam 02 ⭐</small><br>
-      <small>23 Dec</small><br>
-      <img src=".assets/Bands/Bandeau_pushswap.jpg" width="50px"/><br>
-      <small>30 Dec</small>
-    </td>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_pipex.jpg" width="50px"/><br>
-      <small>15 Jan</small><br>
-      <img src=".assets/Bands/Bandeau_Solong.jpg" width="50px"/><br>
-      <small style="color: gold;">✨ Circle 2 Complete ✨</small><br>
-      <small>27 Jan</small>
-    </td>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_Philo.jpg" width="50px"/><br>
-      <small>6 Feb</small>
-    </td>
-  </tr>
-</table>
-</div>
+```mermaid
+journey
+    section Circle 1
+        Libft: 1: done, 2024-10-11
+        Printf: 1: done, 2024-10-21
+        Get_Next_Line: 1: done, 2024-10-28
+        Born2beroot: 1: done, 2024-11-09
+    section Circle 2
+        Exam 02: 2: milestone, 2024-12-23
+        Push_Swap: 2: done, 2024-12-30
+        Pipex: 2: done, 2025-01-15
+        So_Long: 2: done, 2025-01-27
+    section Circle 3
+        Philosophers: 3: active, 2025-02-06
