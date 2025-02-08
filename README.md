@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🎓 42 CURSUS - My Journey Through the Common Core 🎓</h1>
+<h1>🎓 42 - My Journey Through the Common Core 🎓</h1>
 
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
 <h3><i>Keep Working</i></h3>
