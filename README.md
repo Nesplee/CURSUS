@@ -169,13 +169,11 @@ timeline
         Oct 11, 2024 : Libft : 125/100
         Oct 21, 2024 : Printf : 100/100
         Oct 28, 2024 : Get_Next_Line : 112/100
-        Nov 9, 2024 : Born2beroot : 100/100
-		✅ Circle Complete ✅
+        Nov 9, 2024 : Born2beroot : 100/100\n✅ Circle Complete ✅
     section Circle 2 🌟
         Dec 23, 2024 : ⭐ Exam Rank 02 : 100/100
         Dec 30, 2024 : Push_Swap : 125/100
         Jan 15, 2025 : Pipex : 125/100
-        Jan 27, 2025 : So_Long : 125/100
-		✅ Circle Complete ✅
+        Jan 27, 2025 : So_Long : 125/100\n✅ Circle Complete ✅
     section Circle 3 🌟
         Feb 6, 2025 : Philosophers : 100/100
