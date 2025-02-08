@@ -3,10 +3,10 @@
 
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-<img src=".assets/catpool.gif" alt="Swimming Cat" width="50px"/>
-<h3><i>Keep Swimming</i></h3>
-<img src=".assets/catpool.gif" alt="Swimming Cat" width="50px"/>
+<div style="display: inline-flex; align-items: center; gap: 20px;">
+  <img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/>
+  <h3 style="margin: 0;"><i>Keep Swimming</i></h3>
+  <img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/>
 </div>
 
 <h2>🎯 ABOUT 🎯</h2>
