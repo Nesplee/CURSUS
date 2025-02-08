@@ -4,7 +4,7 @@
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
 
 <h3><i>KEEP SWIMMING</i></h3>
-<img src=".assets/catpool.gif" alt="Swimming Cat" width="70px" style="margin: -10px 0;"/>
+<img src=".assets/catpool.gif" alt="Swimming Cat" width="100px" style="margin: -10px 0;"/>
 
 <h2>🎯 ABOUT 🎯</h2>
 <p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
