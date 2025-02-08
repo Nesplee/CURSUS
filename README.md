@@ -3,11 +3,13 @@
 
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
 
-<div style="display: inline-flex; align-items: center; gap: 20px;">
-  <img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/>
-  <h3 style="margin: 0;"><i>Keep Swimming</i></h3>
-  <img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/>
-</div>
+<table border="0">
+  <tr>
+    <td align="right"><img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/></td>
+    <td align="center"><h3><i>Keep Swimming</i></h3></td>
+    <td align="left"><img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/></td>
+  </tr>
+</table>
 
 <h2>🎯 ABOUT 🎯</h2>
 <p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
