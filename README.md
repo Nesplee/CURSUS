@@ -162,26 +162,37 @@ Each project represents a step in my learning journey, from basic C programming 
 <div align="center">
 <h2>📊 Evolution du Cursus</h2>
 
-```mermaid
-%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#00BABC', 'lineColor': '#00BABC' } }}%%
-graph TD
-    subgraph Timeline
-        Oct11[Libft]-->Oct21[Printf]
-        Oct21-->Oct28[GNL]
-        Oct28-->Nov9[Born2beroot<br>✨Circle 1✨]
-        Nov9-->Dec23[Exam02 ⭐]
-        Dec23-->Dec30[Push_swap]
-        Dec30-->Jan15[Pipex]
-        Jan15-->Jan27[So_long<br>✨Circle 2✨]
-        Jan27-->Feb6[Philosophers]
-    end
-
-    style Oct11 fill:#00BABC,color:#fff
-    style Oct21 fill:#00BABC,color:#fff
-    style Oct28 fill:#00BABC,color:#fff
-    style Nov9 fill:gold,color:#000
-    style Dec23 fill:#FF4242,color:#fff
-    style Dec30 fill:#00BABC,color:#fff
-    style Jan15 fill:#00BABC,color:#fff
-    style Jan27 fill:gold,color:#000
-    style Feb6 fill:#00BABC,color:#fff
+[![Cursus Progress](https://quickchart.io/chart?c={
+  type:'line',
+  data:{
+    labels:['Oct','Nov','Dec','Jan','Feb'],
+    datasets:[{
+      label:'Projects',
+      data:[3,1,2,2,1],
+      fill:false,
+      borderColor:'#00BABC',
+      pointBackgroundColor:'#DEDEDE',
+      pointRadius:6,
+      tension:0.4
+    }]
+  },
+  options:{
+    plugins:{
+      title:{
+        display:true,
+        text:'42 Cursus Journey'
+      }
+    },
+    scales:{
+      y:{
+        title:{
+          display:true,
+          text:'Circle Level'
+        },
+        min:0,
+        max:3
+      }
+    }
+  }
+})](https://quickchart.io)
+</div>
