@@ -193,3 +193,7 @@ timeline
 <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="45" height="45"/></a>
 <a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="45" height="45"/></a>
 </div>
+
+<div align="center">
+<img src=".assets/catrain.gif" alt="Cat Rain" width="200px"/>
+</div>
