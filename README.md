@@ -178,3 +178,11 @@ timeline
         Jan 27, 2025 : So_Long (125/100) & Circle Complete 🎯
     section Circle 4 🌟
         Feb 6, 2025 : Philosophers (100/100)
+```
+
+<h2>💻 Tech Stack</h2>
+
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![VM](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white)
