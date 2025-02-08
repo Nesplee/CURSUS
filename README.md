@@ -5,9 +5,9 @@
 
 <table border="0">
   <tr>
-    <td align="right"><img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/></td>
-    <td align="center"><h3><i>Keep Swimming</i></h3></td>
-    <td align="left"><img src=".assets/catpool.gif" alt="Swimming Cat" width="30px"/></td>
+    <td align="right"><h3><i>KEEP</i></h3></td>
+    <td align="center"><img src=".assets/catpool.gif" alt="Swimming Cat" width="50px"/></td>
+    <td align="left"><h3><i>SWIMMING</i></h3></td>
   </tr>
 </table>
 
