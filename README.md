@@ -160,19 +160,20 @@ Each project represents a step in my learning journey, from basic C programming 
 </div>
 
 <div align="center">
-<h2>📊 Common Core Timeline</h2>
+<h2>📊 Progression du Cursus</h2>
 
 ```mermaid
-journey
-    section Circle 1
-        Libft: 1: done, 2024-10-11
-        Printf: 1: done, 2024-10-21
-        Get_Next_Line: 1: done, 2024-10-28
-        Born2beroot: 1: done, 2024-11-09
-    section Circle 2
-        Exam 02: 2: milestone, 2024-12-23
-        Push_Swap: 2: done, 2024-12-30
-        Pipex: 2: done, 2025-01-15
-        So_Long: 2: done, 2025-01-27
-    section Circle 3
-        Philosophers: 3: active, 2025-02-06
+timeline
+    title Parcours à 42
+    section Circle 1 🌟
+        11 Oct 2024 : Libft : 125/100
+        21 Oct 2024 : Printf : 100/100
+        28 Oct 2024 : Get_Next_Line : 112/100
+        9 Nov 2024 : Born2beroot : 100/100 ✨ Cercle Terminé
+    section Circle 2 🌟
+        23 Dec 2024 : ⭐ Exam Rank 02 : 100/100
+        30 Dec 2024 : Push_Swap : 125/100
+        15 Jan 2025 : Pipex : 125/100
+        27 Jan 2025 : So_Long : 125/100 ✨ Cercle Terminé
+    section Circle 3 🌟
+        6 Feb 2025 : Philosophers : 100/100
