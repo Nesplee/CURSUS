@@ -19,7 +19,8 @@ Each project represents a step in my learning journey, from basic C programming 
         <tr>
           <td>
             <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
-            <img src=".assets/NOTES/125.png" width="100px" style="margin-left: 20px"/>
+            <div style="border-left: 2px solid #ccc; height: 20px; display: inline-block; margin: 0 10px;"></div>
+            <img src=".assets/NOTES/125.png" width="100px"/>
           </td>
         </tr>
       </table>
