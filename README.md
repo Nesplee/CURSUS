@@ -156,8 +156,6 @@ Each project represents a step in my learning journey, from basic C programming 
   </tr>
 </table>
 
-<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="400px"/>
-</div>
 
 <div align="center">
 <h2>📊 Cursus Progress</h2>
@@ -179,6 +177,9 @@ timeline
     section Circle 4 🌟
         Feb 6, 2025 : Philosophers (100/100)
 ```
+
+<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="400px"/>
+</div>
 
 <h2>💻 Tech Stack</h2>
 
