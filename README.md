@@ -160,21 +160,30 @@ Each project represents a step in my learning journey, from basic C programming 
 </div>
 
 <div align="center">
-<h2>📊 Journey Progress</h2>
+<h2>📊 Evolution du Cursus</h2>
 
 ```mermaid
-timeline
-    title 42 Cursus Timeline
-    section Circle 1
-        October 11, 2024 : Libft : 125/100
-        October 21, 2024 : Printf : 100/100
-        October 28, 2024 : Get_Next_Line : 112/100
-        November 9, 2024 : Born2beroot : 100/100 : Circle Complete
-    section Circle 2
-        December 23, 2024 : Exam Rank 02 : 100/100
-        December 30, 2024 : Push_Swap : 125/100
-        January 15, 2025 : Pipex : 125/100
-        January 27, 2025 : So_Long : 125/100 : Circle Complete
-    section Circle 3
-        February 6, 2025 : Philosophers : 100/100
+%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#00BABC', 'lineColor': '#00BABC' } }}%%
+graph TD
+    subgraph Timeline
+    Oct11[Libft]-->Oct21[Printf]
+    Oct21-->Oct28[GNL]
+    Oct28-->Nov9[Born2beroot<br>✨Circle 1✨]
+    Nov9-->Dec23[Exam02 ⭐]
+    Dec23-->Dec30[Push_swap]
+    Dec30-->Jan15[Pipex]
+    Jan15-->Jan27[So_long<br>✨Circle 2✨]
+    Jan27-->Feb6[Philosophers]
+    end
+
+    style Oct11 fill:#00BABC,color:#fff
+    style Oct21 fill:#00BABC,color:#fff
+    style Oct28 fill:#00BABC,color:#fff
+    style Nov9 fill:#gold,color:#000
+    style Dec23 fill:#FF4242,color:#fff
+    style Dec30 fill:#00BABC,color:#fff
+    style Jan15 fill:#00BABC,color:#fff
+    style Jan27 fill:#gold,color:#000
+    style Feb6 fill:#00BABC,color:#fff
+
 </div>
