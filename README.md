@@ -162,72 +162,47 @@ Each project represents a step in my learning journey, from basic C programming 
 <div align="center">
 <h2>📊 Journey Progress</h2>
 
-<table width="100%" style="margin: 20px 0;">
-  <tr style="height: 150px;">
-    <!-- Graphique stylisé -->
-    <td style="vertical-align: bottom;">
-      <div style="height: 40px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_Libft.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Oct 11</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 60px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_ftprintf.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Oct 21</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 80px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_GNL.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Oct 28</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 100px; background: #00BABC; border: 2px solid gold;">
-        <img src=".assets/Bands/Bandeau_born2beroot.jpg" width="30px" style="margin-top: -20px;"/>
-        <span style="color: gold;">●<br>Circle 1<br>Complete</span>
-      </div>
-      <small>Nov 9</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 90px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_pushswap.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Dec 30</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 120px; background: #FF4242;">
-        <img src=".assets/Bands/Bandeau_examrank02.jpg" width="30px" style="margin-top: -20px;"/>
-        <span style="color: white;">EXAM 02</span>
-      </div>
-      <small>Dec 23</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 110px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_pipex.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Jan 15</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 130px; background: #00BABC; border: 2px solid gold;">
-        <img src=".assets/Bands/Bandeau_Solong.jpg" width="30px" style="margin-top: -20px;"/>
-        <span style="color: gold;">●<br>Circle 2<br>Complete</span>
-      </div>
-      <small>Jan 27</small>
-    </td>
-    <td style="vertical-align: bottom;">
-      <div style="height: 140px; background: #00BABC;">
-        <img src=".assets/Bands/Bandeau_Philo.jpg" width="30px" style="margin-top: -20px;"/>
-      </div>
-      <small>Feb 6</small>
-    </td>
-  </tr>
-</table>
+<svg width="800" height="300" style="background: white;">
+    <!-- Axe horizontal -->
+    <line x1="50" y1="250" x2="750" y2="250" stroke="#333" stroke-width="2"/>
 
-<div style="margin: 10px 0;">
-  <span style="color: #00BABC;">■</span> Projects
-  <span style="color: #FF4242;">■</span> Exams
-  <span style="color: gold;">●</span> Circle Completion
-</div>
+    <!-- Axe vertical -->
+    <line x1="50" y1="50" x2="50" y2="250" stroke="#333" stroke-width="2"/>
+
+    <!-- Points des projets -->
+    <circle cx="100" cy="220" r="5" fill="#00BABC"/> <!-- Libft -->
+    <circle cx="200" cy="200" r="5" fill="#00BABC"/> <!-- Printf -->
+    <circle cx="250" cy="180" r="5" fill="#00BABC"/> <!-- GNL -->
+    <circle cx="300" cy="160" r="8" fill="gold"/> <!-- B2BR + Fin Circle 1 -->
+    <circle cx="400" cy="140" r="5" fill="#00BABC"/> <!-- Push_swap -->
+    <circle cx="450" cy="120" r="6" fill="#FF4242"/> <!-- Exam 02 -->
+    <circle cx="500" cy="100" r="5" fill="#00BABC"/> <!-- Pipex -->
+    <circle cx="600" cy="80" r="8" fill="gold"/> <!-- So_long + Fin Circle 2 -->
+    <circle cx="700" cy="60" r="5" fill="#00BABC"/> <!-- Philo -->
+
+    <!-- Ligne de progression -->
+    <path d="M100,220 L200,200 L250,180 L300,160 L400,140 L450,120 L500,100 L600,80 L700,60"
+          stroke="#00BABC"
+          fill="none"
+          stroke-width="2"/>
+
+    <!-- Dates -->
+    <text x="90" y="270" font-size="12">Oct 11</text>
+    <text x="190" y="270" font-size="12">Oct 21</text>
+    <text x="240" y="270" font-size="12">Oct 28</text>
+    <text x="290" y="270" font-size="12">Nov 9</text>
+    <text x="390" y="270" font-size="12">Dec 30</text>
+    <text x="440" y="270" font-size="12">Dec 23</text>
+    <text x="490" y="270" font-size="12">Jan 15</text>
+    <text x="590" y="270" font-size="12">Jan 27</text>
+    <text x="690" y="270" font-size="12">Feb 6</text>
+
+    <!-- Légende -->
+    <circle cx="50" cy="20" r="5" fill="#00BABC"/>
+    <text x="65" y="25" font-size="12">Projects</text>
+    <circle cx="150" cy="20" r="6" fill="#FF4242"/>
+    <text x="165" y="25" font-size="12">Exams</text>
+    <circle cx="250" cy="20" r="8" fill="gold"/>
+    <text x="265" y="25" font-size="12">Circle Completion</text>
+</svg>
 </div>
