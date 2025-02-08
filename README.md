@@ -2,7 +2,7 @@
 <h1>🎓 42 - My Journey Through the Common Core 🎓</h1>
 
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
-<h3><i>Keep Working</i></h3>
+<h3><i>Keep Swimming</i></h3>
 
 <h2>🎯 ABOUT 🎯</h2>
 <p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
@@ -156,7 +156,7 @@ Each project represents a step in my learning journey, from basic C programming 
   </tr>
 </table>
 
-<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="300px"/>
+<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="400px"/>
 </div>
 
 <div align="center">
