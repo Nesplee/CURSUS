@@ -17,9 +17,11 @@ Each project represents a step in my learning journey, from basic C programming 
     <td width="50%">
       <table width="100%">
         <tr>
-          <td>
+          <td width="45%" align="center">
             <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
-            <div style="border-left: 2px solid #ccc; height: 20px; display: inline-block; margin: 0 10px;"></div>
+          </td>
+          <td width="10%" style="border-right: 2px solid #ccc;"></td>
+          <td width="45%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
           </td>
         </tr>
