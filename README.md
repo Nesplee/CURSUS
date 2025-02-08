@@ -163,17 +163,27 @@ Each project represents a step in my learning journey, from basic C programming 
 <h2>📊 Cursus Progress</h2>
 
 ```mermaid
-timeline
-    title Journey at 42
-    section Circle 1 🌟
-        Oct 11, 2024 : Libft : 125/100
-        Oct 21, 2024 : Printf : 100/100
-        Oct 28, 2024 : Get_Next_Line : 112/100
-        Nov 9, 2024 : Born2beroot : 100/100 ✨ Circle Complete
-    section Circle 2 🌟
-        Dec 23, 2024 : ⭐ Exam Rank 02 : 100/100
-        Dec 30, 2024 : Push_Swap : 125/100
-        Jan 15, 2025 : Pipex : 125/100
-        Jan 27, 2025 : So_Long : 125/100 ✨ Circle Complete
-    section Circle 3 🌟
-        Feb 6, 2025 : Philosophers : 100/100
+graph TB
+    classDef default fill:#f9f9f9,stroke:none
+    classDef milestone fill:gold,stroke:none,color:black
+    classDef exam fill:#FF4242,stroke:none,color:white
+
+    subgraph Circle1[Circle 1 🌟]
+    L[Libft<br>125/100<br>Oct 11]
+    P[Printf<br>100/100<br>Oct 21]
+    G[GNL<br>112/100<br>Oct 28]
+    B[Born2beroot<br>100/100<br>Nov 9]:::milestone
+    end
+
+    subgraph Circle2[Circle 2 🌟]
+    E[Exam 02<br>100/100<br>Dec 23]:::exam
+    PS[Push_Swap<br>125/100<br>Dec 30]
+    PX[Pipex<br>125/100<br>Jan 15]
+    S[So_Long<br>125/100<br>Jan 27]:::milestone
+    end
+
+    subgraph Circle3[Circle 3 🌟]
+    PH[Philosophers<br>100/100<br>Feb 6]
+    end
+
+    L-->P-->G-->B-->E-->PS-->PX-->S-->PH
