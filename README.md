@@ -158,3 +158,76 @@ Each project represents a step in my learning journey, from basic C programming 
 
 <img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="300px"/>
 </div>
+
+<div align="center">
+<h2>📊 Journey Progress</h2>
+
+<table width="100%" style="margin: 20px 0;">
+  <tr style="height: 150px;">
+    <!-- Graphique stylisé -->
+    <td style="vertical-align: bottom;">
+      <div style="height: 40px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_Libft.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Oct 11</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 60px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_ftprintf.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Oct 21</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 80px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_GNL.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Oct 28</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 100px; background: #00BABC; border: 2px solid gold;">
+        <img src=".assets/Bands/Bandeau_born2beroot.jpg" width="30px" style="margin-top: -20px;"/>
+        <span style="color: gold;">●<br>Circle 1<br>Complete</span>
+      </div>
+      <small>Nov 9</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 90px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_pushswap.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Dec 30</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 120px; background: #FF4242;">
+        <img src=".assets/Bands/Bandeau_examrank02.jpg" width="30px" style="margin-top: -20px;"/>
+        <span style="color: white;">EXAM 02</span>
+      </div>
+      <small>Dec 23</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 110px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_pipex.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Jan 15</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 130px; background: #00BABC; border: 2px solid gold;">
+        <img src=".assets/Bands/Bandeau_Solong.jpg" width="30px" style="margin-top: -20px;"/>
+        <span style="color: gold;">●<br>Circle 2<br>Complete</span>
+      </div>
+      <small>Jan 27</small>
+    </td>
+    <td style="vertical-align: bottom;">
+      <div style="height: 140px; background: #00BABC;">
+        <img src=".assets/Bands/Bandeau_Philo.jpg" width="30px" style="margin-top: -20px;"/>
+      </div>
+      <small>Feb 6</small>
+    </td>
+  </tr>
+</table>
+
+<div style="margin: 10px 0;">
+  <span style="color: #00BABC;">■</span> Projects
+  <span style="color: #FF4242;">■</span> Exams
+  <span style="color: gold;">●</span> Circle Completion
+</div>
+</div>
