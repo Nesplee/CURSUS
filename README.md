@@ -15,13 +15,11 @@ Each project represents a step in my learning journey, from basic C programming 
       <img src=".assets/CIRCLES/42_circle1.jpg" alt="Circle 1" width="100%"/>
     </td>
     <td width="50%">
-      <h3>1st Circle 🌟</h3>
       <table width="100%">
         <tr>
-          <td align="center">
+          <td>
             <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
-            <br>First C library
-            <br><img src=".assets/NOTES/125.png" width="100px"/>
+            <img src=".assets/NOTES/125.png" width="100px" style="margin-left: 20px"/>
           </td>
         </tr>
       </table>
@@ -121,20 +119,34 @@ Each project represents a step in my learning journey, from basic C programming 
 </table>
 
 <!-- Exams -->
-<img src=".assets/CIRCLES/42_exams.jpg" alt="42 Exams" width="50%"/>
-<h4>Exam Results 📝</h4>
-<h3>Exam Rank 02</h3>
-<table>
+<table width="100%">
   <tr>
-    <td align="center">
-      <img src=".assets/Bands/Bandeau_examrank02.jpg" width="100px"/>
-      <br>ROTONE (25pts)<br>FT_STRDUP (25pts)<br>PGCD (25pts)<br>FT_ITOA (25pts)
-      <br><img src=".assets/NOTES/100.png" width="100px"/>
+    <td width="50%" align="center">
+      <img src=".assets/CIRCLES/42_exams.jpg" alt="42 Exams" width="100%"/>
+    </td>
+    <td width="50%">
+      <table width="100%">
+        <tr>
+          <td>
+            <img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/>
+            <img src=".assets/NOTES/100.png" width="100px" style="margin-left: 20px"/>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            ROTONE (25pts) | FT_STRDUP (25pts)<br>
+            PGCD (25pts) | FT_ITOA (25pts)
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <b>Validated on December 23, 2024</b>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-
-<h3>Validated on December 23, 2024</h3>
 
 <img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="300px"/>
 </div>
