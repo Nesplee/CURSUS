@@ -158,7 +158,7 @@ Each project represents a step in my learning journey, from basic C programming 
 
 
 <div align="center">
-<h2>📊 Cursus Progress</h2>
+<h2>📈 Cursus Progress 📈</h2>
 
 ```mermaid
 timeline
@@ -181,7 +181,7 @@ timeline
 <img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="400px"/>
 </div>
 
-<h2>💻 Tech Stack</h2>
+<h2>💻 Tech Stack 💻</h2>
 
 <div align="center" style="display: flex; gap: 10px; justify-content: center;">
 <a href="https://en.cppreference.com/w/c/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="45" height="45"/></a>
