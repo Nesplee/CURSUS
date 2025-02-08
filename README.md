@@ -182,7 +182,11 @@ timeline
 
 <h2>💻 Tech Stack</h2>
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-![VM](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white)
+<div align="center" style="display: flex; gap: 10px; justify-content: center;">
+<a href="https://en.cppreference.com/w/c/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="45" height="45"/></a>
+<a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="45" height="45"/></a>
+<a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="45" height="45"/></a>
+<a href="https://www.virtualbox.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/virtualbox/virtualbox-original.svg" width="45" height="45"/></a>
+<a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="45" height="45"/></a>
+<a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="45" height="45"/></a>
+</div>
