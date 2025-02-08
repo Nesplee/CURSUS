@@ -188,7 +188,18 @@ timeline
         Feb 6, 2025 : Philosophers (100/100)
 ```
 
-<h2>💻 Tech Stack 💻</h2>
+<h2>⌛ Actually working on ⌛</h2>
+
+![Progress](https://img.shields.io/badge/Exam_Rank_03-In_Progress-yellow?style=flat-square&logo=42)
+
+![Progress](https://img.shields.io/badge/Minishell-Coming_Soon-lightgrey?style=flat-square&logo=42)
+
+<div align="center">
+<img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
+</div>
+
+
+<h3>💻 Tech Stack 💻</h3>
 
 <div align="center" style="display: flex; gap: 10px; justify-content: center;">
 <a href="https://en.cppreference.com/w/c/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="45" height="45"/></a>
@@ -197,9 +208,4 @@ timeline
 <a href="https://www.virtualbox.org/"><img src="https://cdn.worldvectorlogo.com/logos/virtualbox.svg" width="45" height="45"/></a>
 <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="45" height="45"/></a>
 <a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="45" height="45"/></a>
-</div>
-
-
-<div align="center">
-<img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
 </div>
