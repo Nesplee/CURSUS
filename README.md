@@ -27,10 +27,10 @@ Each project represents a step in my learning journey, from basic C programming 
 
 <div align="center">
 
-### 1st Circle 💫
+### 1st Circle 🌟
 | Project | Description | Grade |
 |:-------:|:------------|:-----:|
-| <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a> | First C library | <img src=".assets/NOTES/100.png" width="100px"/> |
+| <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a> | First C library | <img src=".assets/NOTES/125.png" width="100px"/> |
 | <a href="/FT_PRINTF/"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a> | Printf recoding | <img src=".assets/NOTES/100.png" width="100px"/> |
 | <a href="/GET_NEXT_LINE/"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a> | Reading function | <img src=".assets/NOTES/112.png" width="100px"/> |
 | <a href="/BORN2BEROOT/"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a> | System administration | <img src=".assets/NOTES/100.png" width="100px"/> |
@@ -39,12 +39,21 @@ Each project represents a step in my learning journey, from basic C programming 
 
 <div align="center">
 
-### 2nd Circle 💫
+### 2nd Circle 🌟
 | Project | Description | Grade |
 |:-------:|:------------|:-----:|
 | <a href="/PIPEX/"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a> | Unix pipes | <img src=".assets/NOTES/125.png" width="100px"/> |
 | <a href="/PUSH_SWAP/"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a> | Sorting algorithm | <img src=".assets/NOTES/125.png" width="100px"/> |
 | <a href="/SO_LONG/"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a> | 2D Game | <img src=".assets/NOTES/125.png" width="100px"/> |
+
+</div>
+
+<div align="center">
+
+### 3rd Circle 🌟
+| Project | Description | Grade |
+|:-------:|:------------|:-----:|
+| <a href="/PHILOSOPHERS/"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a> | Thread synchronization | <img src=".assets/NOTES/100.png" width="100px"/> |
 
 </div>
 
