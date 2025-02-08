@@ -3,8 +3,13 @@
 
 <img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
 
-<h3><i>KEEP SWIMMING</i></h3>
-<img src=".assets/catpool.gif" alt="Swimming Cat" width="100px" style="margin: -10px 0;"/>
+<br/>
+
+<h3><i>TRYING NOT TO SINK SINCE</i></h3>
+
+![42 Start](https://img.shields.io/badge/%20October%201st%202024-000000.svg?style=for-the-badge&logo=42&logoColor=white&labelColor=00BABC)
+
+<img src=".assets/catpool.gif" alt="Swimming Cat" width="200px"/>
 
 <h2>🎯 ABOUT 🎯</h2>
 <p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
@@ -194,28 +199,7 @@ timeline
 <a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="45" height="45"/></a>
 </div>
 
-<div align="center">
-<h2>🛠️ Skills Developed</h2>
-</div>
-
-### C Development
-- Memory management (malloc/free, leaks)
-- Data structures (lists, arrays)
-- Process handling (fork, pipes)
-- I/O operations (GNL, Printf)
-
-### System Administration
-- VM configuration (Born2beroot)
-- Basic security implementation
-- Service management
-- Network setup
-
-### Tools Mastery
-- Git version control
-- Makefiles
-- GCC compiler
-- Vim/VSCode
 
 <div align="center">
-<img src=".assets/catrain.gif" alt="Cat Rain" width="200px"/>
+<img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
 </div>
