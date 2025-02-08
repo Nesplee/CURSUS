@@ -195,5 +195,27 @@ timeline
 </div>
 
 <div align="center">
+<h2>🛠️ Skills Developed</h2>
+</div>
+
+### C Development
+- Memory management (malloc/free, leaks)
+- Data structures (lists, arrays)
+- Process handling (fork, pipes)
+- I/O operations (GNL, Printf)
+
+### System Administration
+- VM configuration (Born2beroot)
+- Basic security implementation
+- Service management
+- Network setup
+
+### Tools Mastery
+- Git version control
+- Makefiles
+- GCC compiler
+- Vim/VSCode
+
+<div align="center">
 <img src=".assets/catrain.gif" alt="Cat Rain" width="200px"/>
 </div>
