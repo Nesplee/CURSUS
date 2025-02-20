@@ -142,20 +142,19 @@ Each project represents a step in my learning journey, from basic C programming 
     <td width="50%">
       <table width="100%">
         <tr>
-          <td>
-            <img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/>
-            <img src=".assets/NOTES/100.png" width="100px" style="margin-left: 20px"/>
+          <td width="50%" align="center">
+            <a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
           </td>
         </tr>
         <tr>
-          <td align="center">
-            ROTONE (25pts) | FT_STRDUP (25pts)<br>
-            PGCD (25pts) | FT_ITOA (25pts)
+          <td width="50%" align="center">
+            <a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="150px"/></a>
           </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <b>Validated on December 23, 2024</b>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
           </td>
         </tr>
       </table>
@@ -186,6 +185,7 @@ timeline
         Jan 27, 2025 : So_Long (125/100) & Circle Complete 🎯
     section Circle 4 🌟
         Feb 6, 2025 : Philosophers (100/100)
+        Feb 18, 2025 : ⭐ Exam Rank 03 (100/100)
 ```
 
 <h2>⌛ Actually working on ⌛</h2>
