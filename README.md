@@ -190,8 +190,6 @@ timeline
 
 <h2>⌛ Actually working on ⌛</h2>
 
-![Progress](https://img.shields.io/badge/Exam_Rank_03-In_Progress-yellow?style=flat-square&logo=42)
-
 ![Progress](https://img.shields.io/badge/Minishell-Coming_Soon-lightgrey?style=flat-square&logo=42)
 
 <div align="center">
