@@ -123,7 +123,7 @@ The existence of shells is linked to the very existence of IT. At the time, all 
 </div>
 
 <div align="center">
-  <img src=".assets/Illu_Minishell3.png" alt="MINISHELL Details" width="300px"/>
+  <img src=".assets/Illu_Minishell3.png" alt="MINISHELL Details" width="500px"/>
 </div>
 
 <div align="center">
