@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   initialisation_hooks.c                             :+:      :+:    :+:   */
+/*   initialisation_hooks_mouse.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 10:35:02 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/16 12:34:42 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/08/14 17:40:54 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,18 +40,19 @@ static int	mouse_move(int x, int y, t_game *g)
 	static int	initialized;
 	static int	last_x;
 	int			dx;
+	int			center_x;
+	int			center_y;
 
 	(void)y;
+	center_x = WIN_WIDTH / 2;
+	center_y = WIN_HEIGHT / 2;
 	if (init_mouse_tracking(x, &last_x, &initialized))
 		return (0);
-	dx = x - last_x;
+	dx = x - center_x;
 	if (abs(dx) > 100)
-	{
-		last_x = x;
 		return (0);
-	}
 	update_player_rotation(g, dx);
-	last_x = x;
+	mlx_mouse_move(g->mlx.mlx_ptr, g->mlx.win_ptr, center_x, center_y);
 	return (0);
 }
 
@@ -62,4 +63,7 @@ void	init_hooks(t_game *g)
 	mlx_hook(g->mlx.win_ptr, 6, PointerMotionMask, mouse_move, g);
 	mlx_hook(g->mlx.win_ptr, 17, 0, close_window, g);
 	mlx_loop_hook(g->mlx.mlx_ptr, game_loop, g);
+	mlx_mouse_hide(g->mlx.mlx_ptr, g->mlx.win_ptr);
+	mlx_mouse_move(g->mlx.mlx_ptr, g->mlx.win_ptr,
+		WIN_WIDTH / 2, WIN_HEIGHT / 2);
 }
