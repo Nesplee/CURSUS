@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:36:12 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/17 12:37:45 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/08/14 17:57:12 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,16 +75,25 @@ static int	handle_open_door(t_game *g, int cur)
 
 void	try_move(t_game *g, double nx, double ny)
 {
-	int	cur;
+	double	old_x;
+	double	old_y;
+	int		can_move_x;
+	int		can_move_y;
+	int		cur;
 
-	if (!can_move(g, nx, ny))
-		return ;
-	if (g->map.grid[(int)ny][(int)nx] == 'D')
+	old_x = g->player.x;
+	old_y = g->player.y;
+	can_move_x = can_move(g, nx, old_y);
+	can_move_y = can_move(g, old_x, ny);
+	if (can_move_x)
+		g->player.x = nx;
+	if (can_move_y)
+		g->player.y = ny;
+	if ((g->player.x != old_x || g->player.y != old_y)
+		&& g->map.grid[(int)g->player.y][(int)g->player.x] == 'D')
 	{
-		cur = door_index(g, (int)nx, (int)ny);
+		cur = door_index(g, (int)g->player.x, (int)g->player.y);
 		if (handle_open_door(g, cur))
 			return ;
 	}
-	g->player.x = nx;
-	g->player.y = ny;
 }
