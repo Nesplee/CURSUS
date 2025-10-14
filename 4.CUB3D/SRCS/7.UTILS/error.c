@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 16:09:11 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/17 14:11:48 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:23:55 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ int	close_window(t_game *g)
 void	cleanup(int status, void *arg)
 {
 	(void)status;
-	free_game((t_game *)arg);
+	(void)arg;
 }

@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 10:35:02 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/14 17:40:54 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:10:48 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ static int	mouse_move(int x, int y, t_game *g)
 	int			center_x;
 	int			center_y;
 
+	if (!g->mouse_locked)
+		return (0);
 	(void)y;
 	center_x = WIN_WIDTH / 2;
 	center_y = WIN_HEIGHT / 2;

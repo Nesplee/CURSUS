@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 18:06:51 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/15 11:33:41 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:22:41 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 void	free_frame(t_img *frame, void *mlx_ptr)
 {
-	if (frame->img_ptr)
+	if (frame->img_ptr && mlx_ptr)
+	{
 		mlx_destroy_image(mlx_ptr, frame->img_ptr);
+		frame->img_ptr = NULL;
+	}
 }
 
 void	free_rays(t_game *g)
@@ -55,15 +58,18 @@ void	free_map(t_map *map)
 
 void	free_game(t_game *g)
 {
-	free_map(&g->map);
 	free_textures(g);
 	free_animations(g);
-	free_frame(&g->frame, g->mlx.mlx_ptr);
-	free_rays(g);
 	free_doors(g);
 	free_sprites(g);
+	free_frame(&g->frame, g->mlx.mlx_ptr);
+	free_rays(g);
+	free_map(&g->map);
 	if (g->mlx.win_ptr)
 		mlx_destroy_window(g->mlx.mlx_ptr, g->mlx.win_ptr);
-	mlx_destroy_display(g->mlx.mlx_ptr);
-	free(g->mlx.mlx_ptr);
+	if (g->mlx.mlx_ptr)
+	{
+		mlx_destroy_display(g->mlx.mlx_ptr);
+		free(g->mlx.mlx_ptr);
+	}
 }

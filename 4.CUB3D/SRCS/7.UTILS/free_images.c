@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 14:41:09 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/17 14:02:21 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:18:13 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 static void	free_single_texture(void *mlx_ptr, t_texture *tex)
 {
+	if (tex->img.img_ptr && mlx_ptr)
+		mlx_destroy_image(mlx_ptr, tex->img.img_ptr);
 	if (tex->path)
 	{
 		free(tex->path);
 		tex->path = NULL;
 	}
-	if (tex->img.img_ptr)
-		mlx_destroy_image(mlx_ptr, tex->img.img_ptr);
+	tex->img.img_ptr = NULL;
 }
 
 void	free_textures(t_game *g)
@@ -53,6 +54,7 @@ void	free_doors(t_game *g)
 		i++;
 	}
 	free(g->doors);
+	g->doors = NULL;
 }
 
 void	free_sprites(t_game *g)

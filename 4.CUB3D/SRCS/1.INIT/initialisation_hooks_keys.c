@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   initialisation_keys.c                              :+:      :+:    :+:   */
+/*   initialisation_hooks_keys.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:30:31 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/16 12:33:45 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:13:43 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ static void	handle_action_keys(int key, t_game *g)
 	}
 	if (key == KEY_SHIFT)
 		g->input.key_shift = 1;
+	if (key == KEY_F1)
+		g->mouse_locked = !g->mouse_locked;
 	if (key == KEY_ESC)
 		exit(0);
 }

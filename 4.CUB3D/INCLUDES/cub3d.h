@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 12:26:25 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/17 14:12:04 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:13:40 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@
 # define KEY_SPACE	32
 # define KEY_E		101
 # define KEY_SHIFT	65505
+# define KEY_F1		65470
 
 /* ========================================================================= */
 /* 							STRUCTURES										 */
@@ -232,6 +233,7 @@ typedef struct s_game
 	t_anim				anim_west;
 	double				time;
 	double				old_time;
+	int					mouse_locked;
 }		t_game;
 
 /* ========================= 1. INITIALISATION ============================ */

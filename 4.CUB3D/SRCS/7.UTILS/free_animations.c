@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 14:00:33 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/07/17 14:03:12 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:18:35 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,15 @@ static void	free_anim_frames(void *mlx_ptr, t_anim *anim)
 	i = 0;
 	while (i < ANIM_FRAMES)
 	{
+		if (anim->frames[i].img.img_ptr && mlx_ptr)
+			mlx_destroy_image(mlx_ptr,
+				anim->frames[i].img.img_ptr);
 		if (anim->frames[i].path)
 		{
 			free(anim->frames[i].path);
 			anim->frames[i].path = NULL;
 		}
-		if (anim->frames[i].img.img_ptr)
-			mlx_destroy_image(mlx_ptr,
-				anim->frames[i].img.img_ptr);
+		anim->frames[i].img.img_ptr = NULL;
 		i++;
 	}
 }
