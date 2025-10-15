@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 09:12:14 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/10/06 09:14:06 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/10/13 13:42:38 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/10/13 13:47:05 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,14 @@
 # include <string>
 # include <cctype>
 
-class	 Megaphone {
+class	Megaphone {
+
+private:
 
 public:
 	Megaphone();
 	~Megaphone();
-	std::string	toUpperCase(const std::string &text) const;
-
+	std::string	toUpperCase(const std::string &text);
 };
 
 #endif

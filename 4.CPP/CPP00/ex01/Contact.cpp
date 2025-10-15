@@ -5,100 +5,43 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 09:37:11 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/10/13 11:49:45 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/10/13 14:14:17 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/10/13 15:25:23 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 
-//	CONSTRUCTOR AND DESTRUCTOR
 Contact::Contact() : _firstName(""), _lastName(""), _nickName(""),
-	_phoneNumber(""), _darkestSecret("") {
-		std::cout<<"Contact constructor called"<<std::endl;
+		_phoneNumber(""), _darkestSecret("") {
+	std::cout<<"Contact default constructor called"<<std::endl;
 }
 
 Contact::~Contact() {
 	std::cout<<"Contact destructor called"<<std::endl;
 }
 
-/* ========================================================================= */
-/*								PRIVATES METHODS							 */
-/* ========================================================================= */
+/*
+===============================================================================
+						PUBLICS METHODS
+===============================================================================
+*/
 
-//	INPUT
-std::string	Contact::_getInput(const std::string &prompt) const {
-	std::string	input;
-	std::cout<<prompt;
-	std::getline(std::cin, input);
-	while (input.empty() || input.length() > 30)
-	{
-		if (input.empty())
-			std::cout<<"Please enter at least one character.."<<std::endl;
-		else
-			std::cout<<"Entry too long. 30 characters maximum."<<std::endl;
-		std::cout<<prompt;
-		std::getline(std::cin, input);
-	}
-	return (input);
-}
+std::string	Contact::getFirstName(void) const { return (_firstName); }
+std::string	Contact::getLastName(void) const { return (_lastName); }
+std::string	Contact::getNickName(void) const { return (_nickName); }
+std::string	Contact::getPhoneNumber(void) const { return (_phoneNumber); }
+std::string	Contact::getDarkestSecret(void) const { return (_darkestSecret); }
 
-bool	Contact::_isValidNumber(const std::string &number) const {
-	int	i = 0;
-	if (number[i] == '+')
-		i = 1;
-	while (i < (int)number.length()) {
-		if (number[i] < '0' || number[i] > '9')
-			return (false);
-		i++;
-	}
-	return (true);
-}
-
-std::string Contact::_getPhoneNumber(const std::string &prompt) const {
-	std::string	input;
-	std::cout<<prompt;
-	std::getline(std::cin, input);
-	while (input.empty() || input.length() > 30 || !_isValidNumber(input))
-	{
-		if (input.empty())
-			std::cout<<"Please enter a valid phone number."<<std::endl;
-		else if (input.length() > 12)
-			std::cout<<"Number too long. Enter a valid phone number please"<<std::endl;
-		else
-			std::cout<<"Only digits and '+' allowed"<<std::endl;
-		std::cout<<prompt;
-		std::getline(std::cin, input);
-	}
-	return (input);
-}
-
-//	SETTERS
-void	Contact::_setFirstName(const std::string &name) { _firstName = name; }
-void	Contact::_setLastName(const std::string &name) { _lastName = name; }
-void	Contact::_setNickName(const std::string &name) { _nickName = name; }
-void	Contact::_setPhoneNumber(const std::string &number) { _phoneNumber = number; }
-void	Contact::_setDarkestSecret(const std::string &secret) { _darkestSecret = secret; }
-
-/* ========================================================================= */
-/*								PUBLICS METHODS								 */
-/* ========================================================================= */
-
-std::string	Contact::getFirstName() const { return (_firstName); }
-std::string	Contact::getLastName() const { return (_lastName); }
-std::string	Contact::getNickName() const { return (_nickName); }
-std::string	Contact::getPhoneNumber() const { return (_phoneNumber); }
-std::string	Contact::getDarkestSecret() const{ return (_darkestSecret); }
-
-void	Contact::displayContact() const {
-	std::cout<<"First Name        : "<<_firstName<<std::endl;
-	std::cout<<"Last Name         : "<<_lastName<<std::endl;
+void	Contact::displayContact(void) const {
+	std::cout<<"First name        : "<<_firstName<<std::endl;
+	std::cout<<"Last name         : "<<_lastName<<std::endl;
 	std::cout<<"Nickname          : "<<_nickName<<std::endl;
-	std::cout<<"Phone Number      : "<<_phoneNumber<<std::endl;
-	std::cout<<"Darkest Secret    : "<<_darkestSecret<<std::endl;
+	std::cout<<"Phone number      : "<<_phoneNumber<<std::endl;
+	std::cout<<"Darkest secret    : "<<_darkestSecret<<std::endl;
 }
 
-void	Contact::recordContact() {
+void	Contact::recordContact(void) {
 	std::string	input;
 
 	input = _getInput("Please enter your first name: ");
@@ -111,4 +54,61 @@ void	Contact::recordContact() {
 	_setPhoneNumber(input);
 	input = _getInput("Please enter your darkest secret: ");
 	_setDarkestSecret(input);
+}
+
+/*
+===============================================================================
+						PRIVATES METHODS
+===============================================================================
+*/
+
+void	Contact::_setFirstName(const std::string &name) { _firstName = name; }
+void	Contact::_setLastName(const std::string &name) { _lastName = name; }
+void	Contact::_setNickName(const std::string &name) { _nickName = name; }
+void	Contact::_setPhoneNumber(const std::string &number) { _phoneNumber = number; }
+void	Contact::_setDarkestSecret(const std::string &secret) { _darkestSecret = secret; }
+
+bool	Contact::_isValidPhoneNumber(const std::string &number) const {
+	if (number.empty()) return (false);
+	std::size_t 		start = 0;
+	const std::size_t	len = number.length();
+	if (number[0] == '+') {
+		start = 1;
+		if (len == 1)
+			return (false);
+	}
+	for (std::size_t i = start; i < len; i++) {
+		if (number[i] < '0' || number[i] > '9')
+			return (false);
+	}
+	return (true);
+}
+
+std::string	Contact::_getInput(const std::string &prompt) const {
+	std::string	input;
+	std::cout<<prompt;
+	std::getline(std::cin, input);
+	while (input.empty() || input.length() > 15) {
+		if (input.empty())
+			std::cout<<"Please enter a valid answer"<<std::endl;
+		else
+			std::cout<<"Entry too long, 15 characters maximum"<<std::endl;
+		std::cout<<prompt;
+		std::getline(std::cin, input);
+	}
+	return (input);
+}
+
+std::string	Contact::_getPhoneNumber(const std::string &prompt) const {
+	std::string	number;
+	std::cout<<prompt;
+	std::getline(std::cin, number);
+	while (number.empty() || number.length() > 15 || !_isValidPhoneNumber(number)) {
+		if (number.empty()) { std::cout<<"Please enter a valid number"<<std::endl; }
+		else if (number.length() > 15) { std::cout<<"Number too long, 15 characters maximum"<<std::endl; }
+		else { std::cout<<"Only '+' and digits allowed for number"<<std::endl; }
+		std::cout<<prompt;
+		std::getline(std::cin, number);
+	}
+	return (number);
 }

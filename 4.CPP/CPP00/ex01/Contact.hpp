@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 09:32:26 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/10/06 10:46:05 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/10/13 14:02:58 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/10/13 15:25:20 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include <cctype>
 
 class	Contact {
 
@@ -25,26 +26,25 @@ private:
 	std::string	_phoneNumber;
 	std::string	_darkestSecret;
 
-	std::string	_getInput(const std::string &prompt) const;
-	bool		_isValidNumber(const std::string &number) const;
-	std::string	_getPhoneNumber(const std::string &prompt) const;
 	void		_setFirstName(const std::string &name);
 	void		_setLastName(const std::string &name);
 	void		_setNickName(const std::string &name);
 	void		_setPhoneNumber(const std::string &number);
 	void		_setDarkestSecret(const std::string &secret);
+	std::string	_getInput(const std::string &prompt) const;
+	bool		_isValidPhoneNumber(const std::string &number) const;
+	std::string	_getPhoneNumber(const std::string &prompt) const;
 
 public:
 	Contact();
 	~Contact();
-	std::string	getFirstName() const;
-	std::string	getLastName() const;
-	std::string	getNickName() const;
-	std::string	getPhoneNumber() const;
-	std::string	getDarkestSecret() const;
-	void		displayContact() const;
-	void		recordContact();
-
+	void		recordContact(void);
+	void		displayContact(void) const ;
+	std::string	getFirstName(void) const ;
+	std::string	getLastName(void) const ;
+	std::string	getNickName(void) const ;
+	std::string	getPhoneNumber(void) const ;
+	std::string	getDarkestSecret(void) const ;
 };
 
 #endif

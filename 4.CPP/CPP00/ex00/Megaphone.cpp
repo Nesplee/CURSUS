@@ -5,28 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 09:14:12 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/10/06 09:22:22 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/10/13 13:45:03 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/10/13 13:57:00 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Megaphone.hpp"
 
 Megaphone::Megaphone() {
-	std::cout<<"Megaphone constructor called"<<std::endl;
+	std::cout<<"Megaphone default constructor called"<<std::endl;
 }
 
 Megaphone::~Megaphone() {
 	std::cout<<"Megaphone destructor called"<<std::endl;
 }
 
-std::string	Megaphone::toUpperCase(const std::string &text) const {
-	std::string result = text;
-	size_t		i = 0;
-
-	while (i < text.length()) {
+std::string	Megaphone::toUpperCase(const std::string &text) {
+	std::string	result = text;
+	for (int i = 0; i < (int)result.length(); i++) {
 		result[i] = std::toupper(result[i]);
-		i++;
 	}
 	return (result);
 }
