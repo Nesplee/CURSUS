@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 17:23:10 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/19 11:06:41 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/07 11:11:06 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Point::Point() : _attributeX(0), _attributeY(0) {
 }
 
 Point::Point(const float x, const float y) : _attributeX(x), _attributeY(y) {
-	std::cout<<"Point w/ float parameters constructor called"<<std::endl;
+	std::cout<<"Point float parameters constructor called"<<std::endl;
 }
 
 Point::Point(const Point &other) : _attributeX(other._attributeX), _attributeY(other._attributeY) {

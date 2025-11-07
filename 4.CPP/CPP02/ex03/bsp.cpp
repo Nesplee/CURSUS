@@ -6,11 +6,11 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 17:24:39 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/19 10:55:51 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/07 11:15:41 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fixed.hpp"
+#include "Fixed.hpp"
 #include "point.hpp"
 
 Fixed	area(Point const& a, Point const& b, Point const& c) {

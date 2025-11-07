@@ -6,14 +6,14 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 17:22:37 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/19 10:55:43 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/07 11:15:50 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef POINT_HPP
 # define POINT_HPP
 
-#include "fixed.hpp"
+#include "Fixed.hpp"
 #include <cmath>
 
 class	Point
