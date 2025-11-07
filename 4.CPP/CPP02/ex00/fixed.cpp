@@ -6,11 +6,11 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 10:35:13 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/18 10:53:13 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/07 10:09:06 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fixed.hpp"
+#include "Fixed.hpp"
 
 Fixed::Fixed() : _rawValue(0) {
 	std::cout<<"Fixed constructor called"<<std::endl;
@@ -25,7 +25,7 @@ Fixed::Fixed(const Fixed& other) : _rawValue(other._rawValue) {
 }
 
 Fixed&	Fixed::operator=(const Fixed& other) {
-	std::cout<<"Fixed copy assignment operator"<<std::endl;
+	std::cout<<"Fixed copy assignment operator called"<<std::endl;
 	if (this != &other) {
 		this->_rawValue = other._rawValue;
 	}

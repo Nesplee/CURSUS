@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fixed.hpp                                          :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/18 11:03:41 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/18 11:57:49 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/05 09:45:51 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/06 09:37:45 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,28 @@
 # define FIXED_HPP
 
 # include <iostream>
+# include <string>
 # include <cmath>
 
-class	Fixed
-{
-public:
-	Fixed();
-	Fixed(const Fixed& other);
-	Fixed& operator=(const Fixed& other);
-	~Fixed();
-	Fixed(const int number);
-	Fixed(const float number);
-	float	toFloat(void) const;
-	int		toInt(void) const;
+class	Fixed {
 
 private:
-	static const int	_fractionnalBits = 8;
 	int					_rawValue;
+	static const int	_fractionnalBits = 8;
+
+public:
+	Fixed();
+	Fixed(const int raw);
+	Fixed(const float raw);
+	Fixed(const Fixed& other);
+	~Fixed();
+	Fixed&	operator=(const Fixed& other);
+	int		getRawBits(void) const;
+	void	setRawBits(int const raw);
+	float	toFloat(void) const;
+	int		toInt(void) const;
 };
 
-std::ostream& operator<<(std::ostream& os, const Fixed& obj);
+std::ostream&	operator<<(std::ostream& os, const Fixed& obj);
 
 #endif

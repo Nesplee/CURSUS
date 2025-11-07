@@ -6,11 +6,11 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 11:47:22 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/08/21 11:44:08 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/07 10:08:17 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fixed.hpp"
+#include "Fixed.hpp"
 
 int main( void )
 {
