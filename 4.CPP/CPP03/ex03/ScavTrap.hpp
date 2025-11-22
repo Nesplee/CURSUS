@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/02 11:51:46 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 09:31:11 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/20 15:13:11 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/22 16:02:19 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,20 @@
 # define SCAVTRAP_HPP
 
 # include "ClapTrap.hpp"
-# include <iostream>
-# include <string>
 
-class	ScavTrap : virtual public ClapTrap
-{
+class	ScavTrap : virtual public ClapTrap {
+
 public:
 	ScavTrap(const std::string &name);
+	ScavTrap(const ScavTrap &other);
+	ScavTrap&	operator=(const ScavTrap &other);
 	~ScavTrap();
+
 	void	attack(const std::string &target);
 	void	guardGate(void);
+
+private:
+	bool	_keeperMode;
 };
 
 #endif

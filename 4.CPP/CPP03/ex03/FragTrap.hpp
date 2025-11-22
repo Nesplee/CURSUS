@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 08:52:40 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 09:31:19 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/22 16:02:12 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@
 # define FRAGTRAP_HPP
 
 # include "ClapTrap.hpp"
-# include <iostream>
-# include <string>
 
-class	FragTrap : virtual public ClapTrap
-{
+class	FragTrap : virtual public ClapTrap {
 
 public:
 	FragTrap(const std::string &name);
+	FragTrap(const FragTrap &other);
+	FragTrap&	operator=(const FragTrap &other);
 	~FragTrap();
+
 	void	attack(const std::string &target);
-	void	highFivesGuys(void);
+	void	highFiveGuys(void);
+
+private:
+
 };
 
 #endif

@@ -6,33 +6,27 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 12:17:05 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/01 12:27:45 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/19 19:29:19 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <iostream>
+#include <string>
 
 int main(void)
 {
-	std::cout<<"\n === TEST CONSTRUCTEUR ==="<<std::endl;
-	ClapTrap	robot("Pikachu");
-	ClapTrap	robot2("Charizard");
-	ClapTrap	robot3("Blastoise");
-
-	std::cout<<"\n === TEST ATTACK ==="<<std::endl;
-	robot.attack("Charizard");
-	robot2.takeDamage(5);
-	robot2.attack("Pikachu");
-	robot.takeDamage(2);
-	robot3.attack("Pikachu");
-	robot.takeDamage(3);
-	robot.attack("Charizard");
-	robot2.takeDamage(30);
-	robot.attack("Blastoise");
-	robot3.takeDamage(30);
-	robot.beRepaired(150);
-	robot2.attack("Pikachu");
-	robot3.attack("Pikachu");
+	ClapTrap	clap("Clapie");
+	for (int i = 0; i < 11; i++) {
+		clap.attack("Joe");
+	}
+	ClapTrap	clop("Clopie");
+	for (int i = 0; i< 11; i++) {
+		clop.takeDamage(2);
+	}
+	clop.beRepaired(30);
+	for (int i = 0; i < 11; i++) {
+		clop.attack("Clapie");
+	}
 	return (0);
 }
