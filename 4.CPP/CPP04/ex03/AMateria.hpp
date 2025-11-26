@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/23 19:08:09 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/25 10:24:48 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 19:44:15 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/26 14:51:20 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef AMATERIA_HPP
+# define AMATERIA_HPP
 
 # include <iostream>
 # include <string>
 
-class	Animal {
+class	ICharacter;
 
-protected:
-	std::string	_type;
+class	AMateria {
 
 public:
-	Animal();
-	Animal(const Animal &other);
-	Animal&	operator=(const Animal &other);
-	virtual	~Animal();
-	std::string	getType() const;
+	AMateria(const std::string &type);
+	AMateria(const AMateria &other);
+	AMateria&	operator=(const AMateria &other);
+	virtual	~AMateria();
 
-	virtual void	makeSound() const;
+	const std::string&	getType() const;
+	virtual	AMateria*	clone() const = 0;
+	virtual void		use(ICharacter &target);
+
+protected:
+	std::string _type;
+
 };
 
 #endif

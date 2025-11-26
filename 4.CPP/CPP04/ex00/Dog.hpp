@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:14:20 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 13:30:13 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 10:29:05 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 10:41:41 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 # define DOG_HPP
 
 # include "Animal.hpp"
-# include <iostream>
-# include <string>
 
-class	Dog : public Animal
-{
+class	Dog : public Animal {
 
 public:
 	Dog();
-	virtual ~Dog();
-	virtual void	makeSound() const;
+	Dog(const Dog &other);
+	Dog&	operator=(const Dog &other);
+	~Dog();
 
+	void	makeSound() const;
 };
 
 #endif

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:22:24 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 13:26:52 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 09:57:51 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 10:25:05 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,19 @@
 
 Cat::Cat() : Animal() {
 	_type = "Cat";
-	std::cout<<"Cat constructor called"<<std::endl;
+	std::cout<<"Cat default constructor called"<<std::endl;
+}
+
+Cat::Cat(const Cat &other) : Animal(other) {
+	std::cout<<"Cat copy constructor called"<<std::endl;
+}
+
+Cat&	Cat::operator=(const Cat &other) {
+	std::cout<<"Cat copy assignment operator called"<<std::endl;
+	if (this != &other) {
+		Animal::operator=(other);
+	}
+	return (*this);
 }
 
 Cat::~Cat() {
@@ -22,5 +34,6 @@ Cat::~Cat() {
 }
 
 void	Cat::makeSound() const {
-	std::cout<<" Meow! Meow!"<<std::endl;
+	std::cout<<" MEEEEEEOW! MMMEEEEOOWWWWW"<<std::endl;
 }
+

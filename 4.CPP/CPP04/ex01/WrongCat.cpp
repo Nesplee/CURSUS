@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:53:55 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 13:56:15 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 11:06:23 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 11:13:29 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,19 @@
 
 WrongCat::WrongCat() : WrongAnimal() {
 	_type = "WrongCat";
-	std::cout<<"WrongCat constructor called"<<std::endl;
+	std::cout<<"WrongCat default constructor called"<<std::endl;
+}
+
+WrongCat::WrongCat(const WrongCat &other) : WrongAnimal(other) {
+	std::cout<<"WrongCat copy constructor called"<<std::endl;
+}
+
+WrongCat&	WrongCat::operator=(const WrongCat &other) {
+	std::cout<<"WrongCat copy assignment operator called"<<std::endl;
+	if (this != &other) {
+		WrongAnimal::operator=(other);
+	}
+	return (*this);
 }
 
 WrongCat::~WrongCat() {
@@ -22,5 +34,5 @@ WrongCat::~WrongCat() {
 }
 
 void	WrongCat::makeSound() const {
-	std::cout<<"* Wrong Meow! Wrong Meow! *"<<std::endl;
+	std::cout<<" mEoW bRokEn"<<std::endl;
 }

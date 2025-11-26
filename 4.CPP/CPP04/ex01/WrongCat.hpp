@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:47:44 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 13:52:20 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 11:06:53 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 11:12:13 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 # define WRONGCAT_HPP
 
 # include "WrongAnimal.hpp"
-# include <iostream>
-# include <string>
 
-class	WrongCat : public WrongAnimal
-{
+class	WrongCat : public WrongAnimal {
+
 public:
 	WrongCat();
+	WrongCat(const WrongCat &other);
+	WrongCat&	operator=(const WrongCat &other);
 	~WrongCat();
+
 	void	makeSound() const;
+
 };
 
 #endif

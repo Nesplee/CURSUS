@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:22:33 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/04 13:30:12 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 09:55:42 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 12:49:33 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 # define CAT_HPP
 
 # include "Animal.hpp"
-# include <iostream>
-# include <string>
 
-class	Cat : public Animal
-{
+class	Cat : public Animal {
+
+protected:
 
 public:
 	Cat();
-	virtual ~Cat();
-	virtual void	makeSound()const;
+	Cat(const Cat &other);
+	Cat&	operator=(const Cat &other);
+	~Cat();
+
+	void	makeSound() const;
 };
+
 
 #endif

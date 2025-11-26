@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 10:43:00 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/25 16:39:59 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/25 17:00:18 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	main(void) {
 	const int	size = 10;
-	Animal*	animals[size];
+	AAnimal*	animals[size];
 	std::cout<<" ====================================================== "<<std::endl;
 	std::cout<<"          CONSTRUCTION OF AN ARRAY OF ANIMALS"<<std::endl;
 	std::cout<<" ====================================================== "<<std::endl;

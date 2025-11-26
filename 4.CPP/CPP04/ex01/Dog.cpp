@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/04 13:14:12 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/09/07 21:37:25 by dinguyen         ###   ########.fr       */
+/*   Created: 2025/11/25 10:29:28 by dinguyen          #+#    #+#             */
+/*   Updated: 2025/11/25 15:58:59 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,15 @@
 Dog::Dog() : Animal() {
 	_type = "Dog";
 	_brain = new Brain();
-	std::cout<<"Dog constructor called"<<std::endl;
+	std::cout<<"Dog default constructor called"<<std::endl;
 }
 
-Dog::Dog(const Dog& other) : Animal(other) {
-	_type = other._type;
-	_brain = new Brain(*other._brain);
+Dog::Dog(const Dog &other) : Animal(other) {
 	std::cout<<"Dog copy constructor called"<<std::endl;
-
+	_brain = new Brain(*other._brain);
 }
 
-Dog&	Dog::operator=(const Dog& other) {
+Dog&	Dog::operator=(const Dog &other) {
 	std::cout<<"Dog copy assignment operator called"<<std::endl;
 	if (this != &other) {
 		Animal::operator=(other);
@@ -41,5 +39,14 @@ Dog::~Dog() {
 }
 
 void	Dog::makeSound() const {
-	std::cout<<" Woof! Woof!"<<std::endl;
+	std::cout<<"WOOOF!WOOOFFFFFFF! GRRRRRRRR"<<std::endl;
+}
+
+void	Dog::setIdea(int index, const std::string &idea) {
+	_brain->setIdea(index, idea);
+}
+
+std::string	Dog::getIdea(int index) const {
+	std::string idea = _brain->getIdea(index);
+	return (idea);
 }
