@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 13:35:10 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/26 17:45:28 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 20:49:38 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ void	MateriaSource::learnMateria(AMateria* m) {
 			return ;
 		}
 	}
+	std::cout<<"No available slot to learn Materia "<<m->getType()<<std::endl;
 	delete m;
 }
 

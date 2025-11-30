@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 10:43:00 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/25 16:39:59 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 20:03:23 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	main(void) {
 	std::cout<<" ====================================================== "<<std::endl;
 	std::cout<<"          SOUND TEST OF THE ARRAY"<<std::endl;
 	std::cout<<" ====================================================== "<<std::endl;
-		for (int i = 0; i < size; i++)
+	for (int i = 0; i < size; i++)
 		animals[i]->makeSound();
 	std::cout<<" ====================================================== "<<std::endl;
 	std::cout<<"                     TEST OF THE DOG DEEP COPY "<<std::endl;

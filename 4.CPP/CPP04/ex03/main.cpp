@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 14:18:59 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/26 17:30:48 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 20:56:27 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	printInventory(const Character& c) {
 		if (item)
 			std::cout<<item->getType()<<" / ";
 		else
-			std::cout<<"empty";
+			std::cout<<"empty /";
 	}
 	std::cout<<std::endl;
 }
@@ -34,7 +34,6 @@ bool isEquipped(const Character& c, AMateria* m) {
 			return true;
 	return false;
 }
-
 
 int	main(void) {
 
@@ -73,23 +72,21 @@ int	main(void) {
 	AMateria* m1 = src1.createMateria("ice");
 	AMateria* m2 = src1.createMateria("cure");
 	AMateria* m3 = src1.createMateria("unknown");
-	std::cout << "m1 type: ";
+	std::cout<<"m1 type: ";
 	if (m1)
-		std::cout << m1->getType() << std::endl;
+		std::cout<<m1->getType()<<std::endl;
 	else
-		std::cout << "null" << std::endl;
-
-	std::cout << "m2 type: ";
+		std::cout<<"null"<<std::endl;
+	std::cout<<"m2 type: ";
 	if (m2)
-		std::cout << m2->getType() << std::endl;
+		std::cout<<m2->getType()<<std::endl;
 	else
-		std::cout << "null" << std::endl;
-
-	std::cout << "m3 type: ";
+		std::cout<<"null"<<std::endl;
+	std::cout<<"m3 type: ";
 	if (m3)
-		std::cout << m3->getType() << std::endl;
+		std::cout<<m3->getType()<<std::endl;
 	else
-		std::cout << "null" << std::endl;
+		std::cout<<"null"<<std::endl;
 	std::cout<<" ==================================================== "<<std::endl;
 	std::cout<<"             TEST INVENTORY LIMITS "<<std::endl;
 	std::cout<<" ==================================================== "<<std::endl;
@@ -102,26 +99,33 @@ int	main(void) {
 	bob.equip(tmp2);
 	AMateria* tmp3 = new Ice();
 	bob.equip(tmp3);
-	if (!isEquipped(bob, tmp1)) delete tmp1;
-	if (!isEquipped(bob, tmp2)) delete tmp2;
-	if (!isEquipped(bob, tmp3)) delete tmp3;
 	printInventory(bob);
 	std::cout<<" ==================================================== "<<std::endl;
 	std::cout<<"             TEST USE AND UNEQUIP "<<std::endl;
 	std::cout<<" ==================================================== "<<std::endl;
 	Character alice("Alice");
-	AMateria* tmp4 = new Ice();
-	AMateria* tmp5 = new Cure();
-	alice.equip(tmp4);
-	alice.equip(tmp5);
-	if (!isEquipped(alice, tmp4)) delete tmp4;
-	if (!isEquipped(alice, tmp5)) delete tmp5;
-	alice.use(0, bob);
-	alice.use(1, bob);
-	alice.use(2, bob);
-	alice.unequip(0);
-	alice.use(0, bob);
+	AMateria* tmpIce = new Ice();
+	AMateria* tmpCure = new Cure();
+	AMateria* tmpIce2 = new Ice();
+	AMateria* tmpCure2 = new Cure();
+	alice.equip(tmpIce);
+	alice.equip(tmpCure);
+	alice.equip(tmpIce2);
+	alice.equip(tmpCure2);
+	AMateria* tmpExtra = new Ice();
+	alice.equip(tmpExtra);
 	printInventory(alice);
+	alice.unequip(1);
+	printInventory(alice);
+	alice.unequip(1);
+	alice.use(1, alice);
+	alice.equip(tmpCure);
+	printInventory(alice);
+	alice.unequip(-1);
+	alice.unequip(4);
+	alice.equip(0);
+	alice.use(-1, alice);
+	alice.use(4, alice);
 	std::cout<<" ==================================================== "<<std::endl;
 	std::cout<<"             TEST DEEP COPY "<<std::endl;
 	std::cout<<" ==================================================== "<<std::endl;
@@ -129,7 +133,6 @@ int	main(void) {
 	printInventory(clone);
 	AMateria* tmp6 = new Ice();
 	clone.equip(tmp6);
-	if (!isEquipped(clone, tmp6)) delete tmp6;
 	printInventory(clone);
 	printInventory(alice);
 	std::cout<<" ==================================================== "<<std::endl;

@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 12:03:58 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/26 18:04:33 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 21:05:09 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,6 @@ Character&	Character::operator=(const Character &other) {
 		}
 		_floorCount = other._floorCount;
 		for (int i = 0; i < _floorCount; ++i) {
-			if (_floorItems[i]) {
-				delete _floorItems[i];
-				_floorItems[i] = 0;
-			}
 			if (other._floorItems[i])
 				_floorItems[i] = other._floorItems[i]->clone();
 			else
@@ -120,23 +116,36 @@ void	Character::equip(AMateria *m) {
 	if (!m)
 		return ;
 	int index = _freeSpaceIndex();
-	if (index != -1)
+	if (index != -1) {
+		for (int i = 0; i < _floorCount; ++i) {
+			if (_floorItems[i] == m) {
+				_floorItems[i] = _floorItems[_floorCount - 1];
+				_floorItems[_floorCount - 1] = 0;
+				--_floorCount;
+				break;
+			}
+		}
 		_inventory[index] = m;
+		std::cout<<"item equipped"<<std::endl;
+	} else if (_floorCount < 100) {
+		_floorItems[_floorCount++] = m;
+		std::cout<<"Item on the floor"<<std::endl;
+	}
 }
-
 void	Character::unequip(int index) {
 	if (index < 0 || index >= 4  || !_inventory[index])
 		return ;
 	if (_floorCount < 100) {
-	_floorItems[_floorCount++] = _inventory[index];
-	_inventory[index] = 0;
+		_floorItems[_floorCount++] = _inventory[index];
+		_inventory[index] = 0;
+		std::cout<<"Item on slot "<<index<<" has been put on the floor"<<std::endl;
 	}
 }
 
 void	Character::use(int index, ICharacter &target) {
 	if (index < 0 || index >= 4 || !_inventory[index])
 		return ;
-	(*_inventory[index]).use(target);
+	_inventory[index]->use(target);
 }
 
 AMateria*	Character::getInventoryItem(int index) const {

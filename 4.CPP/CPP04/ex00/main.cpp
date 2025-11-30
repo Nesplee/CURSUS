@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 10:43:00 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/25 11:17:15 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 19:53:08 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int main()
 	std::cout<<" ============================== "<<std::endl;
 	std::cout<<" TESTS W/ RIGHTANIMALS"<<std::endl;
 	std::cout<<" ============================== "<<std::endl;
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
+	std::cout<<j->getType()<< std::endl;
+	std::cout<<i->getType()<< std::endl;
 	i->makeSound();
 	j->makeSound();
 	meta->makeSound();

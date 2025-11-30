@@ -6,7 +6,7 @@
 /*   By: dinguyen <dinguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 09:54:02 by dinguyen          #+#    #+#             */
-/*   Updated: 2025/11/30 11:15:01 by dinguyen         ###   ########.fr       */
+/*   Updated: 2025/11/30 11:21:11 by dinguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,9 @@ const char*	Intern::InvalidFormNameE::what() const throw() {
 AForm*	Intern::makeForm(const std::string &formName, const std::string &target) {
 	std::string	goodForms[3] = {"ShrubberyCreationForm", "RobotomyRequestForm", "PresidentialPardonForm"};
 	AForm*		(*functions[3])(const std::string&) = {
-		createShrubbery,
-		createRobotomy,
-		createPresidential
+		&Intern::createShrubbery,
+		&Intern::createRobotomy,
+		&Intern::createPresidential
 	};
 	for (int i = 0; i < 3; i++) {
 		if (formName == goodForms[i]) {
