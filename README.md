@@ -183,7 +183,7 @@ timeline
     section Circle 1 🌟
         Oct 11, 2024 : Libft (125/100) & Circle Complete 🎯
 	section Circle 2 🌟
-        Oct 21, 2024 : Printf (100/100)
+        Oct 21, 2024 : Ft_printf (100/100)
         Oct 28, 2024 : Get_Next_Line (112/100)
         Nov 9, 2024 : Born2beroot (100/100) & Circle Complete 🎯
     section Circle 3 🌟
@@ -194,6 +194,16 @@ timeline
     section Circle 4 🌟
         Feb 6, 2025 : Philosophers (100/100)
         Feb 18, 2025 : ⭐ Exam Rank 03 (100/100)
+		Jun 9, 2025 : Minishell (125/100) & Circle Complete 🎯
+	section Circle 5 🌟
+        Jun 17, 2025 : ⭐ Exam Rank 04 (100/100)
+        Jul 10, 2025 : Net_Practice (100/100)
+        Oct 15, 2025 : Cub3D (125/100)
+        Nov 03, 2025 : CPP00 (100/100)
+        Nov 03, 2025 : CPP01 (100/100)
+        Nov 23, 2025 : CPP02 (100/100)
+        Nov 23, 2025 : CPP03 (100/100)
+        Dec 01, 2025 : CPP04 (100/100) & Circle Complete 🎯
 ```
 
 <h2>⌛ Actually working on ⌛</h2>
