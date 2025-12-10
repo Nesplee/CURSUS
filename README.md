@@ -27,7 +27,7 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="/LIBFT/"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
+            <a href="../LIBFT/README.md"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
@@ -48,7 +48,7 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="/FT_PRINTF/"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a>
+            <a href="../FT_PRINTF/README.md"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/100.png" width="100px"/>
@@ -56,7 +56,7 @@ Each project represents a step in my learning journey, from basic C programming 
         </tr>
         <tr>
           <td width="50%" align="center">
-            <a href="/GET_NEXT_LINE/"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a>
+            <a href="../GET_NEXT_LINE/README.md"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/112.png" width="100px"/>
@@ -64,7 +64,7 @@ Each project represents a step in my learning journey, from basic C programming 
         </tr>
         <tr>
           <td width="50%" align="center">
-            <a href="/BORN2BEROOT/"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a>
+            <a href="../BORN2BEROOT/README.md"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/100.png" width="100px"/>
@@ -85,7 +85,7 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="/PIPEX/"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a>
+            <a href="../PIPEX/README.md"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
@@ -93,7 +93,7 @@ Each project represents a step in my learning journey, from basic C programming 
         </tr>
         <tr>
           <td width="50%" align="center">
-            <a href="/PUSH_SWAP/"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a>
+            <a href="../PUSH_SWAP/README.md"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
@@ -101,7 +101,7 @@ Each project represents a step in my learning journey, from basic C programming 
         </tr>
         <tr>
           <td width="50%" align="center">
-            <a href="/SO_LONG/"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a>
+            <a href="../SO_LONG/README.md"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
@@ -122,7 +122,7 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="/PHILOSOPHERS/"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a>
+            <a href="../PHILOSOPHERS/README.md"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/100.png" width="100px"/>
