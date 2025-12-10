@@ -141,6 +141,75 @@ Each project represents a step in my learning journey, from basic C programming 
   </tr>
 </table>
 
+<!-- Fifth Circle -->
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src=".assets/CIRCLES/42_circle5.jpg" alt="Circle 5" width="100%"/>
+    </td>
+    <td width="50%">
+      <table width="100%">
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/NET_PRACTICE#readme"><img src=".assets/Bands/Bandeau_netpractice.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CUB3D#readme"><img src=".assets/Bands/Bandeau_Cub3d.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/125.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp00.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp01.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp02.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp03.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp04.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 <!-- Exams -->
 <table width="100%">
   <tr>
