@@ -208,12 +208,12 @@ timeline
 
 <h2>⌛ Actually working on ⌛</h2>
 
-![Progress](https://img.shields.io/badge/Minishell-Coming_Soon-lightgrey?style=flat-square&logo=42)
+![Progress](https://img.shields.io/badge/Webserv-In%20Progress-blue?style=flat-square&logo=42)
+![Progress](https://img.shields.io/badge/Exam%20Rank%2005-In%20Progress-blue?style=flat-square&logo=42)
 
 <div align="center">
 <img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
 </div>
-
 
 <h3>💻 Tech Stack 💻</h3>
 
