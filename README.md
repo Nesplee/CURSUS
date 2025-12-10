@@ -122,10 +122,18 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/PHILOSOPHERS#readme"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a>
+            <a href="https://github.com/Nesplee/PHILOSOPHERS"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/MINISHELL"><img src=".assets/Bands/Bandeau_Minishell.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/125.png" width="100px"/>
           </td>
         </tr>
       </table>
