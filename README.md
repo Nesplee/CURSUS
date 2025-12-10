@@ -165,6 +165,14 @@ Each project represents a step in my learning journey, from basic C programming 
             <img src=".assets/NOTES/100.png" width="100px"/>
           </td>
         </tr>
+		<tr>
+          <td width="50%" align="center">
+            <a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
       </table>
     </td>
   </tr>
