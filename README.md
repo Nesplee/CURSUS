@@ -27,7 +27,7 @@ Each project represents a step in my learning journey, from basic C programming 
       <table width="100%">
         <tr>
           <td width="50%" align="center">
-            <a href="../LIBFT/README.md"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
+            <a href="https://github.com/Nesplee/LIBFT#readme"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/125.png" width="100px"/>
