@@ -67,10 +67,12 @@
 <tr><td align="center"><a href="https://github.com/Nesplee/PIPEX#readme"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a></td><td>Reimplements shell pipe chaining (<code>cmd1 | cmd2</code>) using <code>fork</code>, <code>pipe</code>, and <code>execve</code></td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/PUSH_SWAP#readme"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a></td><td>Sorts a stack of integers with two stacks and a minimal set of moves, algorithmic complexity under scrutiny</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/SO_LONG#readme"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a></td><td>A small 2D tile-based game built on MiniLibX: sprites, collisions, a collectible-driven win condition</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
+<tr><td align="center"><a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/></a></td><td>Supervised exam, no notes, no help: C fundamentals under time pressure</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
 <tr><td colspan="3" align="right"><img src=".assets/badges/circle4.png" height="26" alt="Circle 4" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/PHILOSOPHERS"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a></td><td>The dining philosophers problem: threads, mutexes, and deadlock/starvation avoidance under a hard timing constraint</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/MINISHELL"><img src=".assets/Bands/Bandeau_Minishell.jpg" width="150px"/></a></td><td>A working Bash-like shell: parsing, pipes, redirections, builtins, and signal handling</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
+<tr><td align="center"><a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="150px"/></a></td><td>Supervised exam: pointers, recursion, and structured algorithms</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
 <tr><td colspan="3" align="right"><img src=".assets/badges/circle5.png" height="26" alt="Circle 5" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/NET_PRACTICE#readme"><img src=".assets/Bands/Bandeau_netpractice.jpg" width="150px"/></a></td><td>Network topology exercises: subnetting, static routing, and troubleshooting a broken configuration</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
@@ -80,6 +82,7 @@
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp02.jpg" width="150px"/></a></td><td>CPP02: ad-hoc polymorphism, operator overloading, and a fixed-point number class</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp03.jpg" width="150px"/></a></td><td>CPP03: inheritance, from a simple base class to a small multi-level hierarchy</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp04.jpg" width="150px"/></a></td><td>CPP04: subtype polymorphism, abstract classes, and interfaces</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
+<tr><td align="center"><a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a></td><td>Supervised exam: more advanced C, closer to the level required by Minishell</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
 <tr><td colspan="3" align="right"><img src=".assets/badges/circle6.png" height="26" alt="Circle 6" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp05.jpg" width="150px"/></a></td><td>CPP05: exceptions, and a small orthodox canonical class hierarchy that throws them</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
@@ -89,12 +92,9 @@
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp09.jpg" width="150px"/></a></td><td>CPP09: a small standalone program applying the STL to a real parsing/data problem</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/WEBSERV#readme"><img src=".assets/Bands/Bandeau_webserv.jpg" width="150px"/></a></td><td>Non-blocking HTTP/1.1 server in C++98: static files, CGI, uploads, multiple virtual hosts, config-driven like NGINX</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/INCEPTION#readme"><img src=".assets/Bands/Bandeau_inception.jpg" width="150px"/></a></td><td>Multi-service Docker infrastructure: NGINX with TLS, WordPress, MariaDB, plus FTP, Redis, and n8n as bonus services</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
-
-<tr><td colspan="3" align="right"><img src=".assets/badges/exams.png" height="26" alt="Exams" /></td></tr>
-<tr><td align="center"><a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/></a></td><td>Supervised exam, no notes, no help: C fundamentals under time pressure</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
-<tr><td align="center"><a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="150px"/></a></td><td>Supervised exam: pointers, recursion, and structured algorithms</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
-<tr><td align="center"><a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a></td><td>Supervised exam: more advanced C, closer to the level required by Minishell</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_05/"><img src=".assets/Bands/Bandeau_examrank05.jpg" width="150px"/></a></td><td>Supervised exam gating access to the systems and network track</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
+
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle7.png" height="26" alt="Circle 7" /></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_06/"><img src=".assets/Bands/Bandeau_examrank06.jpg" width="150px"/></a></td><td>Supervised exam gating access to the final Common Core project</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 </table>
 
