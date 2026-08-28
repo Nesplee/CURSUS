@@ -210,6 +210,35 @@ Each project represents a step in my learning journey, from basic C programming 
   </tr>
 </table>
 
+<!-- Sixth Circle -->
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src=".assets/CIRCLES/42_circle6.jpg" alt="Circle 6" width="100%"/>
+    </td>
+    <td width="50%">
+      <table width="100%">
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/WEBSERV#readme"><img src=".assets/Bands/Bandeau_webserv.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="https://github.com/Nesplee/INCEPTION#readme"><img src=".assets/Bands/Bandeau_inception.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/125.png" width="100px"/>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 <!-- Exams -->
 <table width="100%">
   <tr>
@@ -237,6 +266,22 @@ Each project represents a step in my learning journey, from basic C programming 
 		<tr>
           <td width="50%" align="center">
             <a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="/EXAMS/EXAM_RANK_05/"><img src=".assets/Bands/Bandeau_examrank05.jpg" width="150px"/></a>
+          </td>
+          <td width="50%" align="center">
+            <img src=".assets/NOTES/100.png" width="100px"/>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="center">
+            <a href="/EXAMS/EXAM_RANK_06/"><img src=".assets/Bands/Bandeau_examrank06.jpg" width="150px"/></a>
           </td>
           <td width="50%" align="center">
             <img src=".assets/NOTES/100.png" width="100px"/>
@@ -271,8 +316,8 @@ timeline
     section Circle 4 🌟
         Feb 6, 2025 : Philosophers (100/100)
         Feb 18, 2025 : ⭐ Exam Rank 03 (100/100)
-		Jun 9, 2025 : Minishell (125/100) & Circle Complete 🎯
-	section Circle 5 🌟
+        Jun 9, 2025 : Minishell (125/100) & Circle Complete 🎯
+    section Circle 5 🌟
         Jun 17, 2025 : ⭐ Exam Rank 04 (100/100)
         Jul 10, 2025 : Net_Practice (100/100)
         Oct 15, 2025 : Cub3D (125/100)
@@ -281,12 +326,17 @@ timeline
         Nov 23, 2025 : CPP02 (100/100)
         Nov 23, 2025 : CPP03 (100/100)
         Dec 01, 2025 : CPP04 (100/100) & Circle Complete 🎯
+    section Circle 6 🌟
+        Feb 17, 2026 : ⭐ Exam Rank 05 (100/100)
+        Apr 6, 2026 : Webserv (100/100)
+        Jul 9, 2026 : Inception (125/100) & Circle Complete 🎯
+    section Circle 7 🌟
+        Jul 10, 2026 : ⭐ Exam Rank 06 (100/100)
 ```
 
 <h2>⌛ Actually working on ⌛</h2>
 
-![Progress](https://img.shields.io/badge/Webserv-In%20Progress-blue?style=flat-square&logo=42)
-![Progress](https://img.shields.io/badge/Exam%20Rank%2005-In%20Progress-blue?style=flat-square&logo=42)
+![Progress](https://img.shields.io/badge/Ft_Transcendence-In%20Progress-blue?style=flat-square&logo=42)
 
 <div align="center">
 <img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
