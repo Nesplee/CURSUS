@@ -42,39 +42,39 @@
 
 | Circle | Projects | Status |
 | --- | --- | :---: |
-| 1 | Libft | ✅ |
-| 2 | Ft_printf, GNL, Born2beroot | ✅ |
-| 3 | Pipex, Push_swap, So_long | ✅ |
-| 4 | Philosophers, Minishell | ✅ |
-| 5 | Net_practice, Cub3D, CPP00-04 | ✅ |
-| 6 | CPP05-09, Webserv, Inception | ✅ |
-| 7 | Ft_transcendence | 🚧 |
+| 0 | Libft | ✅ |
+| 1 | Ft_printf, GNL, Born2beroot | ✅ |
+| 2 | Pipex, Push_swap, So_long | ✅ |
+| 3 | Philosophers, Minishell | ✅ |
+| 4 | Net_practice, Cub3D, CPP00-04 | ✅ |
+| 5 | CPP05-09, Webserv, Inception | ✅ |
+| 6 | Ft_transcendence | 🚧 |
 
 </div>
 
 <table width="100%">
 <tr><th width="18%">Project</th><th>Description</th><th width="14%">Grade<img src=".assets/spacer.png" width="900" height="1" alt="" /></th></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle1.png" height="26" alt="Circle 1" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle0.png" height="26" alt="Circle 0" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/LIBFT#readme"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a></td><td>From-scratch reimplementation of the C standard library: strings, memory, linked lists, <code>get_next_line</code>, <code>ft_printf</code></td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle2.png" height="26" alt="Circle 2" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle1.png" height="26" alt="Circle 1" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/FT_PRINTF#readme"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a></td><td>A <code>printf</code>-style formatter rebuilt from the man pages, variadic arguments and all</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/GNL#readme"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a></td><td>Reads a file descriptor line by line with a static buffer, independent of file size</td><td align="center"><img src=".assets/NOTES/112.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/BORN2BEROOT#readme"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a></td><td>Hardened Debian VM: LVM encryption, UFW, SUDO policy, password aging, a custom monitoring script</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle3.png" height="26" alt="Circle 3" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle2.png" height="26" alt="Circle 2" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/PIPEX#readme"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a></td><td>Reimplements shell pipe chaining (<code>cmd1 | cmd2</code>) using <code>fork</code>, <code>pipe</code>, and <code>execve</code></td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/PUSH_SWAP#readme"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a></td><td>Sorts a stack of integers with two stacks and a minimal set of moves, algorithmic complexity under scrutiny</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/SO_LONG#readme"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a></td><td>A small 2D tile-based game built on MiniLibX: sprites, collisions, a collectible-driven win condition</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/></a></td><td>Supervised exam, no notes, no help: C fundamentals under time pressure</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle4.png" height="26" alt="Circle 4" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle3.png" height="26" alt="Circle 3" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/PHILOSOPHERS"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a></td><td>The dining philosophers problem: threads, mutexes, and deadlock/starvation avoidance under a hard timing constraint</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/MINISHELL"><img src=".assets/Bands/Bandeau_Minishell.jpg" width="150px"/></a></td><td>A working Bash-like shell: parsing, pipes, redirections, builtins, and signal handling</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="150px"/></a></td><td>Supervised exam: pointers, recursion, and structured algorithms</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle5.png" height="26" alt="Circle 5" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle4.png" height="26" alt="Circle 4" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/NET_PRACTICE#readme"><img src=".assets/Bands/Bandeau_netpractice.jpg" width="150px"/></a></td><td>Network topology exercises: subnetting, static routing, and troubleshooting a broken configuration</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CUB3D#readme"><img src=".assets/Bands/Bandeau_Cub3d.jpg" width="150px"/></a></td><td>A Wolfenstein-style raycasting engine in C, from the DDA algorithm to textured walls and sprites</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp00.jpg" width="150px"/></a></td><td>CPP00: namespaces, classes, member functions, and the orthodox canonical form</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
@@ -84,7 +84,7 @@
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp04.jpg" width="150px"/></a></td><td>CPP04: subtype polymorphism, abstract classes, and interfaces</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a></td><td>Supervised exam: more advanced C, closer to the level required by Minishell</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle6.png" height="26" alt="Circle 6" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle5.png" height="26" alt="Circle 5" /></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp05.jpg" width="150px"/></a></td><td>CPP05: exceptions, and a small orthodox canonical class hierarchy that throws them</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp06.jpg" width="150px"/></a></td><td>CPP06: type conversion, from C-style casts to <code>static_cast</code>, <code>dynamic_cast</code>, and <code>reinterpret_cast</code></td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp07.jpg" width="150px"/></a></td><td>CPP07: templates, function and class templates replacing repetitive overloads</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
@@ -94,7 +94,7 @@
 <tr><td align="center"><a href="https://github.com/Nesplee/INCEPTION#readme"><img src=".assets/Bands/Bandeau_inception.jpg" width="150px"/></a></td><td>Multi-service Docker infrastructure: NGINX with TLS, WordPress, MariaDB, plus FTP, Redis, and n8n as bonus services</td><td align="center"><img src=".assets/NOTES/125.png" width="80px"/></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_05/"><img src=".assets/Bands/Bandeau_examrank05.jpg" width="150px"/></a></td><td>Supervised exam gating access to the systems and network track</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 
-<tr><td colspan="3" align="right"><img src=".assets/badges/circle7.png" height="26" alt="Circle 7" /></td></tr>
+<tr><td colspan="3" align="right"><img src=".assets/badges/circle6.png" height="26" alt="Circle 6" /></td></tr>
 <tr><td align="center"><a href="/EXAMS/EXAM_RANK_06/"><img src=".assets/Bands/Bandeau_examrank06.jpg" width="150px"/></a></td><td>Supervised exam gating access to the final Common Core project</td><td align="center"><img src=".assets/NOTES/100.png" width="80px"/></td></tr>
 </table>
 
@@ -106,22 +106,22 @@
 ```mermaid
 timeline
     title Journey at 42
-    section Circle 1 🌟
+    section Circle 0 🌟
         Oct 11, 2024 : Libft (125/100) & Circle Complete 🎯
-	section Circle 2 🌟
+	section Circle 1 🌟
         Oct 21, 2024 : Ft_printf (100/100)
         Oct 28, 2024 : Get_Next_Line (112/100)
         Nov 9, 2024 : Born2beroot (100/100) & Circle Complete 🎯
-    section Circle 3 🌟
+    section Circle 2 🌟
         Dec 23, 2024 : ⭐ Exam Rank 02 (100/100)
         Dec 30, 2024 : Push_Swap (125/100)
         Jan 15, 2025 : Pipex (125/100)
         Jan 27, 2025 : So_Long (125/100) & Circle Complete 🎯
-    section Circle 4 🌟
+    section Circle 3 🌟
         Feb 6, 2025 : Philosophers (100/100)
         Feb 18, 2025 : ⭐ Exam Rank 03 (100/100)
         Jun 9, 2025 : Minishell (125/100) & Circle Complete 🎯
-    section Circle 5 🌟
+    section Circle 4 🌟
         Jun 17, 2025 : ⭐ Exam Rank 04 (100/100)
         Jul 10, 2025 : Net_Practice (100/100)
         Oct 15, 2025 : Cub3D (125/100)
@@ -130,12 +130,12 @@ timeline
         Nov 23, 2025 : CPP02 (100/100)
         Nov 23, 2025 : CPP03 (100/100)
         Dec 01, 2025 : CPP04 (100/100) & Circle Complete 🎯
-    section Circle 6 🌟
+    section Circle 5 🌟
         Feb 17, 2026 : ⭐ Exam Rank 05 (100/100)
         Apr 6, 2026 : CPP05-09 (100/100)
         Apr 6, 2026 : Webserv (100/100)
         Jul 9, 2026 : Inception (125/100) & Circle Complete 🎯
-    section Circle 7 🌟
+    section Circle 6 🌟
         Jul 10, 2026 : ⭐ Exam Rank 06 (100/100)
 ```
 
