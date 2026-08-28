@@ -1,302 +1,109 @@
 <div align="center">
-<h1>🎓 42 - My Journey Through the Common Core 🎓</h1>
+  <img src=".assets/banner.png" width="100%" alt="42 cursus banner" />
 
-<img src=".assets/Illu_Cursus.jpg" alt="CURSUS Illustration" width="100%"/>
+  <p>
+    <b>Every mandatory project of the Common Core at 42 Lausanne, from a blank <code>libft.h</code> to <code>ft_transcendence</code>.</b>
+  </p>
 
-<br/>
+  <p>
+    <a href="https://42lausanne.ch"><img src="https://img.shields.io/badge/42-Lausanne-000000?style=for-the-badge&logo=42&logoColor=white" alt="42 Lausanne" /></a>
+    <img src="https://img.shields.io/badge/%20Started%20October%201st%202024-000000.svg?style=for-the-badge&logo=42&logoColor=white&labelColor=00BABC" alt="Started October 1st 2024" />
+    <img src="https://img.shields.io/badge/projects-16-5ec8c5?style=for-the-badge" alt="16 projects" />
+  </p>
 
-<h3><i>TRYING NOT TO SINK SINCE</i></h3>
+  <p>
+    <img src="https://img.shields.io/badge/-Overview-2b3137?style=flat-square" alt="Overview" />
+    <img src="https://img.shields.io/badge/-The%20Circles-2b3137?style=flat-square" alt="The Circles" />
+    <img src="https://img.shields.io/badge/-Progress-2b3137?style=flat-square" alt="Progress" />
+    <img src="https://img.shields.io/badge/-Currently-2b3137?style=flat-square" alt="Currently" />
+    <img src="https://img.shields.io/badge/-Tech%20Stack-2b3137?style=flat-square" alt="Tech Stack" />
+  </p>
+</div>
 
-![42 Start](https://img.shields.io/badge/%20October%201st%202024-000000.svg?style=for-the-badge&logo=42&logoColor=white&labelColor=00BABC)
+<img src=".assets/divider.png" width="100%" alt="" />
 
-<img src=".assets/catpool.gif" alt="Swimming Cat" width="200px"/>
-
-<h2>🎯 ABOUT 🎯</h2>
-<p>This repository contains all my projects completed during the Common Core at 42 Lausanne.<br>
-Each project represents a step in my learning journey, from basic C programming to complex system administration.</p>
-
-<h3><i>💡 Project banners are clickable and lead to their documentation 💡</i></h3>
-
-<!-- First Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle1.jpg" alt="Circle 1" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/LIBFT#readme"><img src=".assets/Bands/Bandeau_Libft.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Second Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle2.jpg" alt="Circle 2" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/FT_PRINTF#readme"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/GNL#readme"><img src=".assets/Bands/Bandeau_GNL.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/112.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/BORN2BEROOT#readme"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Third Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle3.jpg" alt="Circle 3" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/PIPEX#readme"><img src=".assets/Bands/Bandeau_pipex.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/PUSH_SWAP#readme"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/SO_LONG#readme"><img src=".assets/Bands/Bandeau_Solong.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Fourth Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle4.jpg" alt="Circle 4" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/PHILOSOPHERS"><img src=".assets/Bands/Bandeau_Philo.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/MINISHELL"><img src=".assets/Bands/Bandeau_Minishell.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Fifth Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle5.jpg" alt="Circle 5" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/NET_PRACTICE#readme"><img src=".assets/Bands/Bandeau_netpractice.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CUB3D#readme"><img src=".assets/Bands/Bandeau_Cub3d.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp00.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp01.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp02.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp03.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp04.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Sixth Circle -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_circle6.jpg" alt="Circle 6" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/WEBSERV#readme"><img src=".assets/Bands/Bandeau_webserv.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="https://github.com/Nesplee/INCEPTION#readme"><img src=".assets/Bands/Bandeau_inception.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/125.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- Exams -->
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src=".assets/CIRCLES/42_exams.jpg" alt="42 Exams" width="100%"/>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td width="50%" align="center">
-            <a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-		<tr>
-          <td width="50%" align="center">
-            <a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="/EXAMS/EXAM_RANK_05/"><img src=".assets/Bands/Bandeau_examrank05.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%" align="center">
-            <a href="/EXAMS/EXAM_RANK_06/"><img src=".assets/Bands/Bandeau_examrank06.jpg" width="150px"/></a>
-          </td>
-          <td width="50%" align="center">
-            <img src=".assets/NOTES/100.png" width="100px"/>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
+<a name="overview"></a>
+<h2 align="center">Overview</h2>
 
 <div align="center">
-<h2>📈 Cursus Progress 📈</h2>
 
-<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="400px"/>
+<img src=".assets/catpool.gif" alt="Swimming Cat" width="180px"/>
+
+<p>This repository is the index of every project I built during the Common Core at 42 Lausanne: from the first blank <code>libft.h</code> to network servers, containerized infrastructure, and the final <code>ft_transcendence</code>. Each entry below lives in its own repository, with its own README, its own subject, and its own grade.</p>
+
+<sup><i>Project banners are clickable and lead to their own documentation.</i></sup>
+
+</div>
+
+<img src=".assets/divider.png" width="100%" alt="" />
+
+<a name="the-circles"></a>
+<h2 align="center">The Circles</h2>
+
+<div align="center">
+
+| Circle | Projects | Status |
+| --- | --- | :---: |
+| 1 | Libft | ✅ |
+| 2 | Ft_printf, GNL, Born2beroot | ✅ |
+| 3 | Pipex, Push_swap, So_long | ✅ |
+| 4 | Philosophers, Minishell | ✅ |
+| 5 | Net_practice, Cub3D, CPP00-04 | ✅ |
+| 6 | Webserv, Inception | ✅ |
+| 7 | Ft_transcendence | 🚧 |
+
+</div>
+
+<div align="center">
+<table width="620">
+<tr><th width="220">Project</th><th width="120">Grade</th></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle1.png" height="26" alt="Circle 1" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/LIBFT#readme"><img src=".assets/Bands/Bandeau_Libft.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle2.png" height="26" alt="Circle 2" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/FT_PRINTF#readme"><img src=".assets/Bands/Bandeau_ftprintf.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/GNL#readme"><img src=".assets/Bands/Bandeau_GNL.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/112.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/BORN2BEROOT#readme"><img src=".assets/Bands/Bandeau_born2beroot.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle3.png" height="26" alt="Circle 3" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/PIPEX#readme"><img src=".assets/Bands/Bandeau_pipex.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/PUSH_SWAP#readme"><img src=".assets/Bands/Bandeau_pushswap.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/SO_LONG#readme"><img src=".assets/Bands/Bandeau_Solong.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle4.png" height="26" alt="Circle 4" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/PHILOSOPHERS"><img src=".assets/Bands/Bandeau_Philo.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/MINISHELL"><img src=".assets/Bands/Bandeau_Minishell.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle5.png" height="26" alt="Circle 5" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/NET_PRACTICE#readme"><img src=".assets/Bands/Bandeau_netpractice.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CUB3D#readme"><img src=".assets/Bands/Bandeau_Cub3d.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp00.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp01.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp02.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp03.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/CPP#readme"><img src=".assets/Bands/Bandeau_cpp04.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/circle6.png" height="26" alt="Circle 6" /></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/WEBSERV#readme"><img src=".assets/Bands/Bandeau_webserv.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="https://github.com/Nesplee/INCEPTION#readme"><img src=".assets/Bands/Bandeau_inception.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/125.png" width="70px"/></td></tr>
+
+<tr><td colspan="2" align="right"><img src=".assets/badges/exams.png" height="26" alt="Exams" /></td></tr>
+<tr><td align="left"><a href="/EXAMS/EXAM_RANK_02/"><img src=".assets/Bands/Bandeau_examrank02.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="/EXAMS/EXAM_RANK_03/"><img src=".assets/Bands/Bandeau_examrank03.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="/EXAMS/EXAM_RANK_04/"><img src=".assets/Bands/Bandeau_examrank04.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="/EXAMS/EXAM_RANK_05/"><img src=".assets/Bands/Bandeau_examrank05.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+<tr><td align="left"><a href="/EXAMS/EXAM_RANK_06/"><img src=".assets/Bands/Bandeau_examrank06.jpg" width="140px"/></a></td><td align="center"><img src=".assets/NOTES/100.png" width="70px"/></td></tr>
+</table>
+</div>
+
+<img src=".assets/divider.png" width="100%" alt="" />
+
+<a name="progress"></a>
+<h2 align="center">Progress</h2>
+
+<div align="center">
+<img src=".assets/Illu_Cursus1.jpg" alt="CURSUS Details" width="320px"/>
 </div>
 
 ```mermaid
@@ -334,22 +141,38 @@ timeline
         Jul 10, 2026 : ⭐ Exam Rank 06 (100/100)
 ```
 
-<h2>⌛ Actually working on ⌛</h2>
+<img src=".assets/divider.png" width="100%" alt="" />
+
+<a name="currently"></a>
+<h2 align="center">Currently Working On</h2>
+
+<div align="center">
 
 ![Progress](https://img.shields.io/badge/Ft_Transcendence-In%20Progress-blue?style=flat-square&logo=42)
 
-<div align="center">
-<img src=".assets/catrain.gif" alt="Cat Rain" width="300px"/>
+<sup><i>The final Common Core project.</i></sup>
+
+<br/>
+
+<img src=".assets/catrain.gif" alt="Cat Rain" width="240px"/>
+
 </div>
 
-<h3>💻 Tech Stack 💻</h3>
+<img src=".assets/divider.png" width="100%" alt="" />
 
-<div align="center" style="display: flex; gap: 10px; justify-content: center;">
-<a href="https://en.cppreference.com/w/c/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="45" height="45"/></a>
-<a href="https://en.cppreference.com/w/cpp/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="45" height="45"/></a>
-<a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="45" height="45"/></a>
-<a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="45" height="45"/></a>
-<a href="https://www.virtualbox.org/"><img src="https://cdn.worldvectorlogo.com/logos/virtualbox.svg" width="45" height="45"/></a>
-<a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="45" height="45"/></a>
-<a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="45" height="45"/></a>
+<a name="tech-stack"></a>
+<h2 align="center">Tech Stack</h2>
+
+<div align="center">
+
+<a href="https://en.cppreference.com/w/c/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="42" height="42"/></a> <a href="https://en.cppreference.com/w/cpp/language"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="42" height="42"/></a> <a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="42" height="42"/></a> <a href="https://www.php.net/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="42" height="42"/></a> <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="42" height="42"/></a> <a href="https://nginx.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" width="42" height="42"/></a> <a href="https://mariadb.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg" width="42" height="42"/></a> <a href="https://wordpress.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-original.svg" width="42" height="42"/></a> <a href="https://redis.io/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="42" height="42"/></a> <a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="42" height="42"/></a> <a href="https://www.virtualbox.org/"><img src="https://cdn.worldvectorlogo.com/logos/virtualbox.svg" width="42" height="42"/></a> <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="42" height="42"/></a> <a href="https://www.vim.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" width="42" height="42"/></a>
+
+</div>
+
+<img src=".assets/divider.png" width="100%" alt="" />
+
+<div align="center">
+
+<sub>42 Lausanne · Common Core</sub>
+
 </div>
